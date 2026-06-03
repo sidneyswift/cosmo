@@ -38,7 +38,7 @@ Every night at 2:30 AM ET via cron. Runs in isolated session.
 3. **Supabase connectivity** — Source `~/.openclaw/credentials/supabase-env.sh` and test a simple query (`SELECT 1`). Report pass/fail.
 4. **GBrain health** — Run `source ~/.gbrain/env.sh && gbrain doctor`. Report any issues.
 5. **Brain sync cron** — Verify brain-sync cron ran in last 60 min (check cron list last-run time).
-6. **Git status** — Check `~/.openclaw/workspace/` and `~/Documents/wiki/` for uncommitted changes. Auto-commit workspace changes with message "janitor: nightly auto-commit".
+6. **Git status & backup push** — Check `~/.openclaw/workspace/` and `~/Documents/wiki/` for uncommitted changes. Auto-commit workspace changes with message "janitor: nightly auto-commit". **Then push the backup to GitHub:** `git -C ~/.openclaw/workspace push origin main`. If the push fails (diverged, auth, or no network), report it loudly — a silent push failure means the off-machine backup is going stale. The workspace repo tracks `origin/main` at github.com/sidneyswift/cosmo.
 7. **1Password CLI** — Test `op whoami` to verify auth is healthy.
 8. **Slack connectivity** — Verify ability to post (tested by sending the report itself).
 
