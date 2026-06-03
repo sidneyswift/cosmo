@@ -1,0 +1,22 @@
+# === Databases (large, regenerable) ===
+db/*.db
+db/*.db-shm
+db/*.db-wal
+db/*.sqlite
+
+# === Test/temp artifacts ===
+test-thumbnails/
+tmp/
+slides/
+*.tmp
+*.lock
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Node ===
+node_modules/
+
+# === Secrets (never commit) ===
+# Secrets live in 1Password, referenced via secrets.template

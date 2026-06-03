@@ -1,0 +1,101 @@
+{
+  "version": "v16",
+  "style_guide_name": "Recoup Thumbnail System v16 — Emotion-First Depth Compositing",
+  "core_identity": {
+    "purpose": "Create premium editorial thumbnails for Recoup — AI infrastructure for the music business.",
+    "core_principle": "Emotional moments in richly detailed worlds, with depth-composited Recoup wordmark.",
+    "brand_position": "Where music, culture, and AI infrastructure meet. Premium, forward-looking, culturally aware.",
+    "target_feeling": ["emotional", "atmospheric", "aspirational", "cultured", "premium", "alive", "wonder"]
+  },
+  "thumbnail_system": {
+    "format": "16:9 (1536x1024)",
+    "pipeline": [
+      "1. Generate scene image via gpt-image-2 (no text, no UI, pure illustration)",
+      "2. GPT-4o vision analyzes scene: identifies subject, optimal wordmark placement, masking zones",
+      "3. rembg extracts foreground subject mask (with bbox-crop fallback for dark scenes)",
+      "4. Depth composite: scene → Recoup full logo wordmark → foreground subject overlapping text",
+      "5. No additional logo stamp needed — the wordmark IS the logo treatment"
+    ],
+    "depth_compositor": {
+      "script": "scripts/depth-thumbnail.py",
+      "wordmark_svg": "~/Documents/projects/mono/marketing/design/logos/logo-darkmode.svg",
+      "default_wordmark_y": 0.45,
+      "default_wordmark_scale": 1.1,
+      "always_use_analyze": true
+    }
+  },
+  "illustration_style": {
+    "quality": "Richly detailed painterly illustration with visible brushstrokes, atmospheric depth, and warm lighting.",
+    "references": ["Studio Ghibli background paintings", "Makoto Shinkai atmospheric perspective", "Pebble brand thumbnails"],
+    "must_have": [
+      "Visible brushwork and painterly texture",
+      "Atmospheric haze and depth of field",
+      "Warm, emotional lighting (golden hour, twilight, warm interiors)",
+      "Fine detail on foreground elements",
+      "Background fading into atmospheric perspective"
+    ],
+    "must_not_have": [
+      "Flat graphic/poster art",
+      "Vector illustration style",
+      "CGI or photorealistic rendering",
+      "Cel-shaded flat anime",
+      "Text, words, UI elements, or typography in the generated image"
+    ]
+  },
+  "subject_rules": {
+    "size": "Small relative to the frame — max 15-20% of image area. The subject is an accent, not the hero.",
+    "character": "Living characters feeling something — not just objects placed in settings. A cat listening, a fox looking up, a figure gazing out. There must be an emotional state.",
+    "scale_contrast": "Big world + small subject. The environment should dwarf the subject, creating wonder and ambition.",
+    "narrative": "There should be a relationship between subject and environment — the subject is reacting to, part of, or engaged with its world.",
+    "silhouette": "Subject must have a clear silhouette that stands out from the background for clean depth masking.",
+    "masking_rule": "Subject should overlap no more than 10-15% of the wordmark — tasteful depth, not a takeover."
+  },
+  "scene_territories": {
+    "description": "Culture, creativity, and the music world without being literal about instruments or performers.",
+    "approved": [
+      "Urban culture — rooftops, city skylines, golden hour streets",
+      "Creative spaces — studios, warehouses, venues (empty, atmospheric)",
+      "Journeys — trains, highways, open roads, movement",
+      "Magical realism — vinyl canyons, record seas, sound forests, equalizer landscapes",
+      "Cultural energy — murals, street art, neon, nightlife atmosphere",
+      "Anticipation — empty venues, moments before something begins",
+      "Wonder — surreal landscapes, vast skies, atmospheric depth"
+    ],
+    "avoid": [
+      "Literal music symbols (notes, treble clefs, pianos, turntables as main subject)",
+      "Performers on stage (too obvious)",
+      "Generic nature/robot scenes (not culturally specific to music)",
+      "Abstract patterns without emotional anchor",
+      "Dark interior scenes (rembg struggles, logo visibility poor)",
+      "Crowded/busy compositions that compete with the wordmark"
+    ]
+  },
+  "composition_rules": {
+    "sky_ratio": "60-70% of the frame should be open sky/atmosphere — this gives the wordmark room to breathe",
+    "wordmark_zone": "Wordmark sits in the vertical middle of the frame (35-55% from top). Subject overlaps from below or beside.",
+    "depth_layers": "Three layers: background (sky, distant elements) → wordmark → foreground (subject, ground plane)",
+    "avoid": [
+      "Subject in the center blocking the wordmark",
+      "Symmetrical compositions (feel static)",
+      "Edge-to-edge density",
+      "Subject larger than 20% of frame"
+    ]
+  },
+  "color_palette": {
+    "primary": "Warm atmospheric tones — golden hour, twilight, amber",
+    "approved": [
+      "Golden hour palette: warm amber (#C8A850), coral, soft orange",
+      "Twilight palette: deep blue-purple, pink-gold horizon",
+      "Night palette: deep navy, warm city lights, neon accents (restrained)",
+      "Green-amber: bioluminescent, forest warmth"
+    ],
+    "avoid": [
+      "Pure black backgrounds",
+      "Oversaturated neon (reads as gaming/cyberpunk)",
+      "Cold grey tech palettes",
+      "High-contrast orange-teal grading"
+    ]
+  },
+  "scene_prompt_template": "Richly detailed painterly anime-style illustration with visible brushstrokes, atmospheric depth, and warm lighting. Semi-realistic style inspired by Studio Ghibli and Makoto Shinkai. {SCENE_DESCRIPTION}. The subject is SMALL in the frame (max 15-20% of image area), positioned at {POSITION}. Vast atmospheric sky or environment takes up most of the frame. Warm emotional lighting. Fine detail on foreground, atmospheric haze in background. No text, no words, no UI elements. 16:9 landscape composition.",
+  "negative_prompt": "flat graphic, poster art, vector, CGI, photorealistic, cel-shaded, text, words, UI, typography, cluttered, busy, dark interior, oversaturated neon"
+}

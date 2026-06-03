@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "9ed0e3e7-cc97-4be2-8d42-b8b8e52dbe2a",
+      "name": "nightly-value",
+      "enabled": true,
+      "createdAtMs": 1778128479112,
+      "updatedAtMs": 1780463129745,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 1 * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Read skills/nightly-value/SKILL.md and run the full nightly value creation session. Follow all four phases. Send the report to Sid via DM. Save report to reports/nightly/ and update today's memory file.",
+        "timeoutSeconds": 3600
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "channel:c0ak88j4spk",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1780549200000,
+        "lastRunAtMs": 1780462800005,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 329740,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "1d52dc69-efe2-4fae-ba4c-e360e855d3a7",
+      "name": "content-pulse",
+      "description": "Daily content discovery at 6 AM ET",
+      "enabled": false,
+      "createdAtMs": 1778220423492,
+      "updatedAtMs": 1779513771429,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the content engine pulse: node /Users/recoupable/Documents/projects/content-engine/scripts/pulse.js — then report a quick summary of what was discovered to #cosmo-wiki.",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "channel:c0ak88j4spk",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1779444000005,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 93463,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "2d995ab2-44ce-410e-a991-2b5656e0e7e7",
+      "name": "content-perf-check",
+      "description": "Evening analytics feedback loop at 8 PM ET",
+      "enabled": false,
+      "createdAtMs": 1778220430551,
+      "updatedAtMs": 1779513800881,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the content engine perf check: node /Users/recoupable/Documents/projects/content-engine/scripts/perf-check.js — update topic multipliers based on what performed well.",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "lastRunAtMs": 1779494400008,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 18126,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "8e3c6f0b-adb4-400d-8844-20541efa95fc",
+      "name": "brain-sync",
+      "description": "GBrain live sync - import wiki changes and embed new content",
+      "enabled": true,
+      "createdAtMs": 1778947235938,
+      "updatedAtMs": 1780496786474,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 1800000,
+        "anchorMs": 1778947235938
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run these shell commands in sequence: (1) source ~/.gbrain/env.sh (2) cd ~/gbrain && gbrain import ~/Documents/wiki/ --no-embed (3) gbrain embed --stale. If everything succeeded, reply HEARTBEAT_OK. Only report if there were errors or notable changes.",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1780498574176,
+        "lastRunAtMs": 1780496774176,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 12298,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "3400b39e-3394-4cad-869c-d0f2a030c00c",
+      "name": "morning-briefing",
+      "description": "Daily morning briefing — signal-only, delivered to Sid's DM at 7:30 AM ET",
+      "enabled": true,
+      "createdAtMs": 1779195222683,
+      "updatedAtMs": 1780486234276,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 7 * * *",
+        "tz": "America/New_York",
+        "staggerMs": 0
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are Cosmo. Read ~/.openclaw/workspace/scripts/morning-briefing.md for the full briefing template. Follow it exactly: gather data from ALL listed sources (content engine nightly summary + logs, content engine DB stats, openclaw cron status, calendar via gog, git activity, brain stats). Compose a single concise morning briefing in Slack mrkdwn format (no markdown tables, no # headers). Keep it under 30 lines. Flag failures with ⚠️. If everything ran clean, say so quickly. Return the briefing as your final output — delivery is handled by the cron runner, do NOT try to post it yourself.",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "user:U0AKPJZFS2C",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1780572600000,
+        "lastRunAtMs": 1780486200004,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 34272,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "06d5af1b-123a-43e2-a91a-327737a4b1c9",
+      "name": "janitor-sweep",
+      "enabled": true,
+      "createdAtMs": 1779283113307,
+      "updatedAtMs": 1780468266076,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 2 * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Read skills/janitor/SKILL.md and run the full janitor sweep. Send the report to Sid via DM (not #cosmo-chat). Save report to reports/janitor/ as well."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "user:U0AKPJZFS2C",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1780554600000,
+        "lastRunAtMs": 1780468200004,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 66072,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "256e5d81-987f-4214-9311-4fdab7fd33e5",
+      "name": "morning-post",
+      "enabled": true,
+      "createdAtMs": 1780010658036,
+      "updatedAtMs": 1780487124579,
+      "schedule": {
+        "kind": "cron",
+        "expr": "45 7 * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the morning content review post: execute 'node ~/Documents/projects/content-engine/scripts/slack-review.js post-best' and report results."
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1780573500000,
+        "lastRunAtMs": 1780487100005,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 24574,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "f7a3b1c2-8d4e-4f5a-9b6c-7e8d9f0a1b2c",
+      "name": "slack-review-watch",
+      "description": "Poll #cosmo-review for reactions (👍/👎/feedback) every 5 minutes",
+      "enabled": false,
+      "createdAtMs": 1780029844283,
+      "updatedAtMs": 1780199431371,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 300000,
+        "anchorMs": 1780029844283
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run 'node ~/Documents/projects/content-engine/scripts/slack-review.js watch' and report results. If nothing happened (no approvals/rejections/feedback), reply HEARTBEAT_OK.",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "lastRunAtMs": 1780199317145,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 70904,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "7c1546ca-6ea0-4c45-927e-e54247a8bfb8",
+      "name": "slack-review-watcher",
+      "enabled": false,
+      "createdAtMs": 1780167574280,
+      "updatedAtMs": 1780199452086,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/5 * * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run this exact command and report the output: node /Users/recoupable/Documents/projects/content-engine/scripts/slack-review.js watch"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "lastRunAtMs": 1780199400006,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 52080,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}

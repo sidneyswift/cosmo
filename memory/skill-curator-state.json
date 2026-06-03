@@ -1,0 +1,71 @@
+{
+  "lastRunAt": "2026-05-30T21:24:00.000Z",
+  "runCount": 1,
+  "lastSummary": "4 agent-created skills found (janitor, nightly-value, self-improvement, skill-curator). All are core infrastructure — no prefix clusters, no overlap, no consolidation needed. Initialized telemetry for all 4.",
+  "paused": false,
+  "skills": {
+    "janitor": {
+      "createdAt": "2026-05-01T00:00:00.000Z",
+      "createdBy": "self-improvement",
+      "state": "active",
+      "pinned": false,
+      "useCount": 0,
+      "viewCount": 1,
+      "patchCount": 0,
+      "lastUsedAt": null,
+      "lastViewedAt": "2026-05-30T21:24:00.000Z",
+      "lastPatchedAt": null,
+      "archivedAt": null
+    },
+    "nightly-value": {
+      "createdAt": "2026-05-01T00:00:00.000Z",
+      "createdBy": "self-improvement",
+      "state": "active",
+      "pinned": false,
+      "useCount": 0,
+      "viewCount": 1,
+      "patchCount": 0,
+      "lastUsedAt": null,
+      "lastViewedAt": "2026-05-30T21:24:00.000Z",
+      "lastPatchedAt": null,
+      "archivedAt": null
+    },
+    "self-improvement": {
+      "createdAt": "2026-05-01T00:00:00.000Z",
+      "createdBy": "self-improvement",
+      "state": "active",
+      "pinned": true,
+      "useCount": 3,
+      "viewCount": 5,
+      "patchCount": 0,
+      "lastUsedAt": "2026-05-30T15:30:00.000Z",
+      "lastViewedAt": "2026-05-30T21:24:00.000Z",
+      "lastPatchedAt": null,
+      "archivedAt": null
+    },
+    "skill-curator": {
+      "createdAt": "2026-05-01T00:00:00.000Z",
+      "createdBy": "self-improvement",
+      "state": "active",
+      "pinned": true,
+      "useCount": 1,
+      "viewCount": 1,
+      "patchCount": 0,
+      "lastUsedAt": "2026-05-30T21:24:00.000Z",
+      "lastViewedAt": "2026-05-30T21:24:00.000Z",
+      "lastPatchedAt": null,
+      "archivedAt": null
+    }
+  },
+  "runHistory": [
+    {
+      "timestamp": "2026-05-30T21:24:00.000Z",
+      "skillsChecked": 4,
+      "markedStale": 0,
+      "archived": 0,
+      "reactivated": 0,
+      "consolidated": [],
+      "pruned": []
+    }
+  ]
+}

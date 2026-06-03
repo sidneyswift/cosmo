@@ -1,0 +1,132 @@
+{
+  "style_guide_name": "Recoup Editorial Operating System v15 — Brand Typography",
+  "core_identity": {
+    "purpose": "Create premium editorial thumbnails for AI infrastructure, agents, and the creative economy.",
+    "core_principle": "Massive brand typography integrated with cinematic illustration.",
+    "brand_position": "Calm editorial software for the future creative economy.",
+    "inspiration": "Pebble-style brand thumbnails — full-bleed illustration with oversized brand wordmark spanning the frame, scene elements interacting with letterforms."
+  },
+  "critical_shift_from_v14": {
+    "removed": [
+      "GUI container / macOS window framing",
+      "Article title text on the image",
+      "Small corner logo stamp",
+      "Pixel-geometric typography for titles",
+      "Contained/boxed illustration"
+    ],
+    "added": [
+      "Full-bleed edge-to-edge illustration",
+      "Massive RECOUP wordmark spanning bottom 30-40% of frame",
+      "Scene elements interacting with letterforms (passing through, behind, in front)",
+      "No article title on image — caption carries the hook",
+      "Brand wordmark IS the design anchor"
+    ]
+  },
+  "composition_system": {
+    "format": "1536x1024 (3:2 landscape)",
+    "layout": {
+      "top_60_percent": "Full-bleed cinematic illustration — atmospheric, one powerful scene concept",
+      "bottom_40_percent": "Massive white RECOUP wordmark, edge to edge, with illustration elements interacting through the letterforms",
+      "overlap_zone": "The illustration and wordmark overlap naturally — objects pass behind, through, and in front of the letters"
+    },
+    "rules": [
+      "No GUI containers, no window frames, no borders.",
+      "No article title on the image. The image is pure brand + atmosphere.",
+      "The RECOUP wordmark is the structural anchor of every composition.",
+      "One powerful visual concept per thumbnail — not a collage.",
+      "Illustration fills the entire frame edge to edge.",
+      "Scene elements must interact with the letterforms — not just sit on top.",
+      "The composition should read instantly at phone thumbnail size."
+    ],
+    "typography_interaction_examples": [
+      "A robot standing inside the O",
+      "Cable or vine draping over the R",
+      "A small drone flying through the gap in the P",
+      "Atmospheric haze partially obscuring some letters",
+      "A structure casting a shadow across the letters",
+      "Foliage growing through the letterforms"
+    ]
+  },
+  "wordmark_system": {
+    "text": "RECOUP",
+    "style": "Bold sans-serif, white (#FFFFFF), all caps",
+    "size": "Spans full width of frame with minimal side margins",
+    "position": "Bottom 30-40% of frame, vertically centered in that zone",
+    "opacity": "Full opacity (1.0) — the letters are bold and confident",
+    "interaction": "Scene elements pass in front of and behind the letters. Some letters may be partially occluded by foreground objects.",
+    "avoid": [
+      "Outline-only text",
+      "Thin or light weight fonts",
+      "Small or modest text size",
+      "Text that sits cleanly on top without interacting with the scene",
+      "Drop shadows or glows on the text"
+    ]
+  },
+  "illustration_system": {
+    "style": [
+      "Semi-realistic anime illustration",
+      "Fine ink-style linework on edges and structures",
+      "Soft painterly rendering with visible brushwork",
+      "Atmospheric perspective — crisp foreground, hazy pale background",
+      "Studio Ghibli background paintings meets Makoto Shinkai atmosphere"
+    ],
+    "mood": [
+      "Cinematic and expansive",
+      "Calm but awe-inspiring",
+      "Lived-in futuristic — nature growing on technology",
+      "Humans and robots coexisting casually"
+    ],
+    "approved_subjects": [
+      "Vast routing towers and infrastructure",
+      "Symbolic orchestration systems",
+      "Memory architecture and archival structures",
+      "Agents traversing landscapes",
+      "Market scenes with robots and humans",
+      "Computational cityscapes with atmospheric depth",
+      "Signal towers and communication infrastructure"
+    ],
+    "rules": [
+      "One focal point with strong atmospheric falloff.",
+      "Strong vanishing point composition when possible.",
+      "Foreground elements should be detailed; background fades to haze.",
+      "The scene must have enough visual mass in the bottom third to interact with the wordmark."
+    ]
+  },
+  "color_system": {
+    "base_palette": ["#D8E4EF", "#F0F2F0", "#E8E4DC", "#A8AEB4", "#B8B4AA", "#3A3A40"],
+    "accent_palette": ["#5B7A90", "#6B8BA0", "#8A9A7A", "#B0BCA0", "#C8A850"],
+    "rules": [
+      "Muted and desaturated — nothing oversaturated.",
+      "Pale ice-blue sky dominates upper portions.",
+      "Warm concrete and earth tones ground the lower portions.",
+      "Atmospheric perspective: foreground crisp, background fades to pale blue-white.",
+      "The white RECOUP wordmark must have sufficient contrast against whatever is behind it."
+    ],
+    "avoid": ["oversaturated colors", "neon accents", "cyberpunk palettes", "pure black backgrounds", "orange-teal grading"]
+  },
+  "lighting_system": {
+    "style": "Soft architectural daylight",
+    "behavior": ["Gentle bloom", "Diffused gradients", "Quiet haze", "Low-contrast atmosphere"],
+    "avoid": ["Dramatic cinematic lighting", "Hard shadows", "Spectacle lighting"]
+  },
+  "texture_system": {
+    "allowed": [
+      "Soft watercolor washes",
+      "Gentle brushwork with visible texture",
+      "Atmospheric haze and soft bloom",
+      "Fine architectural linework",
+      "Soft film grain",
+      "Matte gradients with watercolor bleeding edges"
+    ],
+    "avoid": ["Plastic rendering", "Hyper-detail", "AI artifact sludge", "HDR gloss"]
+  },
+  "master_prompt_template": {
+    "prompt": "Semi-realistic anime-style illustration, full-bleed edge-to-edge, in the style of Studio Ghibli background paintings meets Makoto Shinkai atmospheric perspective. A lived-in futuristic world where nature grows on technology and small robots coexist with humans. Fine ink-style linework on edges and structures, soft painterly rendering with visible brushwork. Color palette: pale ice-blue sky (#D8E4EF), warm concrete ground (#E8E4DC), muted steel-blue accents (#5B7A90), dusty sage-green machinery (#B0BCA0), cool greys (#A8AEB4), small warm pops of golden-yellow (#C8A850). Everything muted and desaturated. Soft natural daylight, no dramatic shadows. Strong vanishing point, detailed foreground, hazy atmospheric background. In the bottom 30-40% of the frame, the word RECOUP appears in massive bold white sans-serif letters spanning nearly the full width. Scene elements interact naturally with these letters — objects pass behind, through, and in front of the letterforms. The illustration has visual mass in the lower portion that overlaps with the text.",
+    "negative_prompt": "GUI container, window frame, macOS window, border, article title text, small logo stamp, photorealistic, CGI, cel-shaded flat anime, cyberpunk neon, oversaturated, pure black background, dashboard UI, gaming branding, glossy rendering, orange-teal grading, heavy shadows"
+  },
+  "pipeline_notes": {
+    "generation": "gpt-image-2 via Vercel AI Gateway, 1536x1024, quality=high",
+    "post_processing": "None needed — the RECOUP wordmark is generated as part of the image by the AI model. No separate logo stamp step.",
+    "article_title": "NOT on the image. Goes in the LinkedIn/X post copy only."
+  }
+}

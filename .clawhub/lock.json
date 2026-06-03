@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "apify": {
+      "version": "1.0.3",
+      "installedAt": 1778119895713
+    },
+    "last30days-official": {
+      "version": "3.1.0-open",
+      "installedAt": 1778290262833
+    },
+    "gstack-openclaw-ceo-review": {
+      "version": "1.0.0",
+      "installedAt": 1778557679216
+    },
+    "gstack-openclaw-retro": {
+      "version": "1.0.0",
+      "installedAt": 1778557679240
+    },
+    "gstack-openclaw": {
+      "version": "2.5.10",
+      "installedAt": 1778557686029
+    }
+  }
+}

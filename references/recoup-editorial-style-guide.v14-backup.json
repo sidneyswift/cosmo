@@ -1,0 +1,347 @@
+{
+ "style_guide_name": "Recoup Editorial Operating System v14 — Symbolic Infrastructure",
+ "core_identity": {
+ "purpose": "Create premium editorial thumbnails and article covers for AI systems, agents, memory, orchestration, infrastructure, and computational creativity.",
+ "core_principle": "Symbolic infrastructure over literal illustration.",
+ "brand_position": "Calm editorial software for the future creative economy.",
+ "target_feeling": [
+ "calm",
+ "computational",
+ "editorial",
+ "structural",
+ "symbolic",
+ "intelligent",
+ "future-facing",
+ "minimal",
+ "architectural",
+ "human"
+ ]
+ },
+ "critical_shift": {
+ "goal": "Replace recurring scenic motifs with symbolic infrastructural systems.",
+ "remove_dependency_on": [
+ "trees",
+ "landscapes",
+ "nature scenes",
+ "scenic illustration",
+ "wallpaper compositions"
+ ],
+ "new_visual_priority": [
+ "symbolic systems",
+ "memory structures",
+ "abstract orchestration",
+ "computational atmosphere",
+ "editorial containment",
+ "large typography"
+ ]
+ },
+ "mobile_feed_first": {
+ "critical_rule": "The image must communicate instantly at thumbnail size.",
+ "thumbnail_behavior": {
+ "rule": "At 15% scale the composition should still read clearly.",
+ "priority_order": [
+ "oversized typography",
+ "single symbolic structure",
+ "GUI containment",
+ "clear silhouette",
+ "simple contrast"
+ ]
+ },
+ "hard_limits": {
+ "maximum_primary_ideas": 1,
+ "maximum_gui_containers": 1,
+ "maximum_atmospheric_fragments": 1,
+ "maximum_text_blocks": 2,
+ "maximum_visual_systems": 2
+ },
+ "avoid": [
+ "tiny metadata",
+ "micro-UI",
+ "complex storytelling",
+ "many windows",
+ "dense overlays",
+ "busy editorial systems",
+ "dashboard density"
+ ]
+ },
+ "composition_system": {
+ "format": "16:9 editorial poster",
+ "layout_behavior": [
+ "massive typography block",
+ "single rounded GUI container",
+ "clean asymmetry",
+ "large architectural whitespace",
+ "one symbolic infrastructure fragment",
+ "one supporting orchestration graphic"
+ ],
+ "rules": [
+ "The composition should read from across a room.",
+ "Whitespace should feel structural.",
+ "One powerful symbolic object is enough.",
+ "Large forms matter more than detail.",
+ "The image should feel designed, not illustrated."
+ ],
+ "avoid": [
+ "collage layouts",
+ "split-screen concepts",
+ "many panels",
+ "small repeated details",
+ "complex visual storytelling"
+ ]
+ },
+ "symbolic_infrastructure_language": {
+ "goal": "Represent intelligence through abstract infrastructure instead of literal environments.",
+ "approved_motifs": [
+ "memory cores",
+ "recursive node systems",
+ "symbolic orchestration maps",
+ "context-routing diagrams",
+ "archival slabs",
+ "fragmented knowledge blocks",
+ "ASCII memory traces",
+ "vector memory clouds",
+ "timeline strata",
+ "terminal residue",
+ "computational sediment",
+ "routing geometries",
+ "memory shards",
+ "ghosted interface remnants",
+ "compressed knowledge artifacts",
+ "soft signal clusters",
+ "modular storage systems",
+ "symbolic recall pathways",
+ "abstract neural maps",
+ "operational memory systems"
+ ],
+ "rules": [
+ "Infrastructure should feel symbolic instead of technical.",
+ "The system should imply intelligence instead of explaining it.",
+ "Abstraction is preferred over realism.",
+ "Geometry should remain large and emotionally readable."
+ ],
+ "avoid": [
+ "literal software screenshots",
+ "analytics dashboards",
+ "charts",
+ "tables",
+ "code screenshots",
+ "realistic applications",
+ "technical diagrams"
+ ]
+ },
+ "gui_container_system": {
+ "critical_rule": "Symbolic emotion must exist inside infrastructural framing.",
+ "container_behavior": [
+ "single dominant rounded container",
+ "soft operating-system framing",
+ "quiet borders",
+ "matte architectural surfaces",
+ "subtle depth"
+ ],
+ "surface_behavior": {
+ "background": "cool neutral greys",
+ "depth": "minimal",
+ "reflection": "soft and diffused",
+ "shadow": "subtle atmospheric diffusion"
+ },
+ "rules": [
+ "Containers should feel infrastructural and premium.",
+ "The GUI should organize the emotion.",
+ "Interfaces should feel symbolic instead of literal."
+ ],
+ "avoid": [
+ "floating holograms",
+ "glassmorphism overload",
+ "multiple stacked windows",
+ "fake startup dashboards",
+ "heavy interface realism"
+ ]
+ },
+ "typography_system": {
+ "goal": "Typography behaves as structural architecture.",
+ "headline_behavior": {
+ "style": [
+ "oversized",
+ "pixel-geometric",
+ "high contrast",
+ "tight spacing",
+ "structural",
+ "minimal"
+ ],
+ "rules": [
+ "Typography should dominate the composition.",
+ "Typography should remain readable at phone size.",
+ "The title should create immediate silhouette recognition.",
+ "Large typography carries the concept."
+ ]
+ },
+ "supporting_text": {
+ "style": [
+ "minimal",
+ "quiet",
+ "secondary"
+ ],
+ "rules": [
+ "Supporting text should not explain the concept.",
+ "Metadata should feel editorial instead of informational.",
+ "Small text should remain visually subordinate."
+ ]
+ },
+ "avoid": [
+ "paragraph-heavy layouts",
+ "small technical labels",
+ "metadata clusters",
+ "multiple competing type systems"
+ ]
+ },
+ "computational_atmosphere_system": {
+ "goal": "Create soft computational atmosphere without relying on literal scenery.",
+ "allowed_elements": [
+ "ASCII diffusion",
+ "pixel noise",
+ "symbolic gradients",
+ "soft routing particles",
+ "computational haze",
+ "vector sediment",
+ "terminal atmosphere",
+ "ghosted symbols",
+ "ambient node textures",
+ "digital residue"
+ ],
+ "rules": [
+ "Atmosphere should feel infrastructural.",
+ "Textures should feel editorial instead of decorative.",
+ "Noise should feel calm and controlled."
+ ],
+ "avoid": [
+ "retro gaming energy",
+ "cyberpunk FX",
+ "glitch overload",
+ "dramatic particles",
+ "sci-fi spectacle"
+ ]
+ },
+ "texture_system": {
+ "allowed": [
+ "soft watercolor washes and painterly gradients",
+ "gentle brushwork with visible but controlled brush texture",
+ "atmospheric haze and soft bloom",
+ "fine architectural line work blending with painterly surfaces",
+ "soft film grain",
+ "matte gradients with watercolor bleeding edges",
+ "editorial noise"
+ ],
+ "rules": [
+ "Texture should feel like watercolor illustration meeting architectural precision.",
+ "The system should feel hand-painted and atmospheric — inspired by the Recoup marketplace illustration (market.jpeg): semi-realistic watercolor with fine line detail, atmospheric perspective, soft washes.",
+ "Brushwork should be visible but refined — like Studio Ghibli background paintings.",
+ "Combine soft painterly washes with precise structural elements (wires, frames, circuits rendered as fine linework)."
+ ],
+ "avoid": [
+ "plastic rendering",
+ "hyper-detail",
+ "AI artifact sludge",
+ "HDR gloss",
+ "over-sharpening"
+ ]
+ },
+ "lighting_system": {
+ "style": "soft architectural daylight",
+ "behavior": [
+ "gentle bloom",
+ "matte reflection",
+ "diffused gradients",
+ "quiet haze",
+ "soft low-contrast atmosphere"
+ ],
+ "avoid": [
+ "dramatic cinematic lighting",
+ "orange-teal grading",
+ "hard shadows",
+ "spectacle lighting"
+ ]
+ },
+ "color_system": {
+ "reference_image": "Recoup market.jpeg — the canonical color source",
+ "base_palette": [
+ "#D8E4EF",
+ "#F0F2F0",
+ "#E8E4DC",
+ "#A8AEB4",
+ "#B8B4AA",
+ "#3A3A40"
+ ],
+ "accent_palette": [
+ "#5B7A90",
+ "#6B8BA0",
+ "#8A9A7A",
+ "#B0BCA0",
+ "#C8A850"
+ ],
+ "rules": [
+ "Match the Recoup marketplace illustration (market.jpeg) exactly: pale ice-blue sky (#D8E4EF), warm concrete white ground (#E8E4DC), muted steel-blue clothing (#5B7A90), dusty sage-green robot accents (#B0BCA0).",
+ "The palette is muted and desaturated — nothing oversaturated. Cool blues dominate but warm earth tones (concrete, golden leaves, amber) ground the scene.",
+ "Atmospheric perspective: foreground is crisp, background fades to pale blue-white haze.",
+ "Sage-green is allowed as a secondary accent (robot chassis, foliage) but never as the dominant color. Steel blue (#5B7A90, #6B8BA0) is the primary accent.",
+ "Small warm pops (golden-yellow #C8A850, amber #B89850) add life — like scattered leaves or crate details.",
+ "Dark elements use charcoal (#3A3A40), never pure black.",
+ "Overall feeling: lived-in futuristic — nature growing on technology, humans and robots coexisting casually."
+ ],
+ "avoid": [
+ "oversaturated colors",
+ "neon accents",
+ "cyberpunk palettes",
+ "pure black (#000000) backgrounds",
+ "heavy green (#7FB875) as dominant",
+ "high-contrast dramatic lighting",
+ "orange-teal color grading"
+ ]
+ },
+ "negative_space_system": {
+ "goal": "Whitespace should feel intentional and authoritative.",
+ "rules": [
+ "Empty space should create calmness and hierarchy.",
+ "Whitespace should balance typography mass.",
+ "Negative space may contain faint computational texture."
+ ],
+ "avoid": [
+ "dead empty corners",
+ "edge-to-edge density",
+ "unbalanced visual weight"
+ ]
+ },
+ "brand_signatures": {
+ "required_elements": [
+ "massive typography",
+ "single rounded GUI container",
+ "symbolic infrastructure",
+ "computational atmosphere",
+ "soft editorial texture",
+ "architectural whitespace",
+ "minimal orchestration geometry"
+ ],
+ "recognition_goal": "The system should remain instantly recognizable in a social feed."
+ },
+ "final_feeling": {
+ "should_feel_like": [
+ "the Recoup marketplace illustration (market.jpeg) — semi-realistic anime illustration with fine ink linework, atmospheric haze, lived-in futuristic world",
+ "Studio Ghibli background paintings meets Makoto Shinkai atmospheric perspective",
+ "a scene from a future world where nature grows on technology and robots coexist with humans",
+ "muted desaturated palette with steel-blue clothing, sage-green machinery, pale ice-blue sky, warm concrete ground",
+ "fine visible ink-style linework on edges and architectural structures over soft painterly rendering"
+ ],
+ "should_not_feel_like": [
+ "flat digital rendering or CGI",
+ "dashboard UI or startup SaaS graphics",
+ "gaming branding or concept art",
+ "oversaturated or high-contrast",
+ "cel-shaded cartoon",
+ "photorealistic",
+ "pure watercolor without structure"
+ ]
+ },
+ "master_prompt_template": {
+ "prompt": "Semi-realistic anime-style illustration in the style of Recoup's marketplace scene: a lived-in futuristic world where nature grows on technology and small robots coexist with humans. Illustration style: fine ink-style linework on edges and architectural structures, soft painterly rendering with visible brushwork, atmospheric perspective where foreground is crisp and background fades to pale blue-white haze. Color palette: pale ice-blue sky (#D8E4EF), warm concrete white ground (#E8E4DC), muted steel-blue accents (#5B7A90, #6B8BA0), dusty sage-green machinery (#B0BCA0, #8A9A7A), cool architectural greys (#A8AEB4), small warm pops of golden-yellow (#C8A850). Everything muted and desaturated. Soft natural daylight, no dramatic shadows. Composition: strong vanishing point, detailed foreground structures, hazy atmospheric background. Include symbolic infrastructure elements (wires, antennas, routing structures, modular systems). Blend this illustrated world with oversized pixel-geometric ASCII typography for article titles. The typography should feel like a digital overlay on the painted scene — chunky pixel font in charcoal (#3A3A40) or dark steel blue.",
+ "negative_prompt": "photorealistic, CGI, cel-shaded flat anime, cyberpunk neon, oversaturated colors, pure black backgrounds, dashboard UI, startup SaaS design, gaming branding, concept art, glossy rendering, orange-teal grading, heavy shadows, pure watercolor without structure, cluttered composition"
+ }
+}

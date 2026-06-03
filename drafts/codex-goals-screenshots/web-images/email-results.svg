@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0f1a"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#ff9f43"/>
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4ecdc4"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bgGrad3)"/>
+
+  <!-- Title -->
+  <text x="800" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="#ffffff">The Email Experiment</text>
+  <text x="800" y="108" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#888899">One goal. One sentence. 3 hours and 52 minutes.</text>
+
+  <!-- The goal quote -->
+  <rect x="200" y="140" width="1200" height="80" rx="12" fill="#1a1a30" stroke="#4ecdc4" stroke-width="1.5"/>
+  <text x="225" y="168" font-family="system-ui, sans-serif" font-size="14" fill="#4ecdc4" font-weight="600">THE GOAL:</text>
+  <text x="225" y="198" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" font-style="italic">"Categorize all bulk/promotion/spam emails. Unsubscribe from unnecessary emails and clean up your inbox.</text>
+  <text x="1375" y="198" text-anchor="end" font-family="system-ui, sans-serif" font-size="18" fill="#ffffff" font-style="italic">Ask for help when needing judgment."</text>
+
+  <!-- Before bar -->
+  <text x="120" y="290" font-family="system-ui, sans-serif" font-size="16" fill="#ff8888" font-weight="600">BEFORE</text>
+  <rect x="120" y="305" width="1300" height="70" rx="8" fill="url(#barGrad)" fill-opacity="0.8"/>
+  <text x="770" y="350" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36" font-weight="800" fill="#ffffff">3,900 emails</text>
+
+  <!-- Arrow down -->
+  <text x="770" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" fill="#4ecdc4">↓</text>
+
+  <!-- After bar -->
+  <text x="120" y="470" font-family="system-ui, sans-serif" font-size="16" fill="#4ecdc4" font-weight="600">AFTER</text>
+  <rect x="120" y="485" width="23" height="70" rx="8" fill="url(#barGrad2)"/>
+  <text x="155" y="530" font-family="system-ui, sans-serif" font-size="36" font-weight="800" fill="#4ecdc4">68 emails</text>
+
+  <!-- Stats row -->
+  <rect x="120" y="600" width="340" height="130" rx="14" fill="#1a1a30" stroke="#444466" stroke-width="1"/>
+  <text x="290" y="645" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" font-weight="800" fill="#ff9f43">98.3%</text>
+  <text x="290" y="678" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888899">emails processed</text>
+  <text x="290" y="700" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#666677">automatically</text>
+
+  <rect x="500" y="600" width="340" height="130" rx="14" fill="#1a1a30" stroke="#444466" stroke-width="1"/>
+  <text x="670" y="645" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" font-weight="800" fill="#38bdf8">3h 52m</text>
+  <text x="670" y="678" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888899">total runtime</text>
+  <text x="670" y="700" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#666677">zero human involvement</text>
+
+  <rect x="880" y="600" width="340" height="130" rx="14" fill="#1a1a30" stroke="#444466" stroke-width="1"/>
+  <text x="1050" y="645" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" font-weight="800" fill="#a855f7">~6M</text>
+  <text x="1050" y="678" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888899">tokens consumed</text>
+  <text x="1050" y="700" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#666677">via Gmail MCP plugin</text>
+
+  <rect x="1260" y="600" width="220" height="130" rx="14" fill="#1a1a30" stroke="#444466" stroke-width="1"/>
+  <text x="1370" y="645" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" font-weight="800" fill="#34d399">68</text>
+  <text x="1370" y="678" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888899">needed human</text>
+  <text x="1370" y="700" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#666677">judgment</text>
+
+  <!-- Bottom insight -->
+  <rect x="200" y="770" width="1200" height="80" rx="12" fill="#1a1a30" stroke="#ffffff" stroke-width="1" stroke-opacity="0.1"/>
+  <text x="800" y="805" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#ccccdd">No 6-part framework needed. A sentence and a half worked because the</text>
+  <text x="800" y="832" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#4ecdc4">finish line was obvious: count uncategorized emails → when count is low enough, you're done.</text>
+</svg>

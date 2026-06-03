@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE}}</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text: #1a1a2e;
+  --text-secondary: #6b7280;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --border: #e5e7eb;
+  --card-bg: #ffffff;
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f172a;
+    --bg-secondary: #1e293b;
+    --text: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --accent: #3b82f6;
+    --accent-hover: #60a5fa;
+    --border: #334155;
+    --card-bg: #1e293b;
+    --card-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+}
+
+nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+nav a:hover { color: var(--accent); }
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section { margin-bottom: 4rem; }
+
+h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+h2 { font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem; }
+h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; }
+p { margin-bottom: 1rem; color: var(--text-secondary); }
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+/* Tabs */
+.tabs { display: flex; gap: 0; border-bottom: 2px solid var(--border); margin-bottom: 1.5rem; }
+.tab {
+  padding: 0.75rem 1.25rem;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.2s;
+}
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* Accordion */
+details.accordion {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+details.accordion summary {
+  padding: 1rem 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: var(--bg-secondary);
+  list-style: none;
+}
+details.accordion summary::-webkit-details-marker { display: none; }
+details.accordion summary::after { content: '+'; float: right; font-weight: 300; font-size: 1.25rem; }
+details.accordion[open] summary::after { content: '−'; }
+details.accordion .accordion-content { padding: 1rem 1.25rem; }
+
+/* Cards */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 1rem;
+}
+
+/* Metrics Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.metric-card { text-align: center; padding: 1.5rem; }
+.metric-value { font-size: 2rem; font-weight: 700; color: var(--accent); }
+.metric-label { font-size: 0.875rem; color: var(--text-secondary); margin-top: 0.25rem; }
+
+/* Checklist */
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.checklist-item input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--accent); }
+.progress-text { font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+.progress-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 1.5rem; }
+.progress-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width 0.3s; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+th { text-align: left; padding: 0.75rem; border-bottom: 2px solid var(--border); font-weight: 600; font-size: 0.875rem; }
+td { padding: 0.75rem; border-bottom: 1px solid var(--border); font-size: 0.9375rem; }
+tr:hover { background: var(--bg-secondary); }
+
+/* CTA */
+.cta {
+  background: var(--accent);
+  color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 3rem 0;
+}
+.cta h2 { color: #ffffff; }
+.cta p { color: rgba(255,255,255,0.85); }
+.cta-button {
+  display: inline-block;
+  background: #ffffff;
+  color: var(--accent);
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: transform 0.2s;
+}
+.cta-button:hover { transform: translateY(-1px); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  main { padding: 1rem; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.375rem; }
+  nav { padding: 0.75rem 1rem; }
+  .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .metrics-grid { grid-template-columns: 1fr; }
+  .cta { padding: 2rem 1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#analysis">Analysis</a>
+  <a href="#framework">Framework</a>
+  <a href="#checklist">Checklist</a>
+  <a href="#next-steps">Next Steps</a>
+</nav>
+
+<main>
+  <section id="overview">
+    <h1>{{TITLE}}</h1>
+    <p class="subtitle">{{SUBTITLE}}</p>
+
+    <div class="metrics-grid">
+      <div class="card metric-card">
+        <div class="metric-value">{{METRIC_1}}</div>
+        <div class="metric-label">{{METRIC_1_LABEL}}</div>
+      </div>
+      <div class="card metric-card">
+        <div class="metric-value">{{METRIC_2}}</div>
+        <div class="metric-label">{{METRIC_2_LABEL}}</div>
+      </div>
+      <div class="card metric-card">
+        <div class="metric-value">{{METRIC_3}}</div>
+        <div class="metric-label">{{METRIC_3_LABEL}}</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="analysis">
+    <h2>Analysis</h2>
+
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('tab1',this)">Tab 1</button>
+      <button class="tab" onclick="showTab('tab2',this)">Tab 2</button>
+      <button class="tab" onclick="showTab('tab3',this)">Tab 3</button>
+    </div>
+    <div id="tab1" class="tab-content active">
+      <div class="card">
+        <h3>Tab 1 Content</h3>
+        <p>Replace with prospect-specific analysis.</p>
+      </div>
+    </div>
+    <div id="tab2" class="tab-content">
+      <div class="card">
+        <h3>Tab 2 Content</h3>
+        <p>Replace with relevant data.</p>
+      </div>
+    </div>
+    <div id="tab3" class="tab-content">
+      <div class="card">
+        <h3>Tab 3 Content</h3>
+        <p>Replace with insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="framework">
+    <h2>Framework</h2>
+
+    <details class="accordion">
+      <summary>Step 1: Identify</summary>
+      <div class="accordion-content">
+        <p>Detail the first step of your framework here.</p>
+      </div>
+    </details>
+    <details class="accordion">
+      <summary>Step 2: Analyze</summary>
+      <div class="accordion-content">
+        <p>Detail the second step here.</p>
+      </div>
+    </details>
+    <details class="accordion">
+      <summary>Step 3: Execute</summary>
+      <div class="accordion-content">
+        <p>Detail the third step here.</p>
+      </div>
+    </details>
+  </section>
+
+  <section id="checklist">
+    <h2>Readiness Checklist</h2>
+    <p class="progress-text"><span id="progress-count">0</span> of <span id="progress-total">5</span> complete</p>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+
+    <label class="checklist-item"><input type="checkbox" onchange="updateProgress()"><span>Item 1</span></label>
+    <label class="checklist-item"><input type="checkbox" onchange="updateProgress()"><span>Item 2</span></label>
+    <label class="checklist-item"><input type="checkbox" onchange="updateProgress()"><span>Item 3</span></label>
+    <label class="checklist-item"><input type="checkbox" onchange="updateProgress()"><span>Item 4</span></label>
+    <label class="checklist-item"><input type="checkbox" onchange="updateProgress()"><span>Item 5</span></label>
+  </section>
+
+  <section id="next-steps">
+    <div class="cta">
+      <h2>Ready to Get Started?</h2>
+      <p>{{CTA_TEXT}}</p>
+      <a href="{{CTA_LINK}}" class="cta-button">{{CTA_BUTTON}}</a>
+    </div>
+  </section>
+</main>
+
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+  document.getElementById(id).style.display = 'block';
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+
+function updateProgress() {
+  const checks = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+  const checked = document.querySelectorAll('.checklist-item input[type="checkbox"]:checked').length;
+  document.getElementById('progress-count').textContent = checked;
+  document.getElementById('progress-total').textContent = checks.length;
+  document.getElementById('progress-fill').style.width = (checked / checks.length * 100) + '%';
+}
+</script>
+</body>
+</html>

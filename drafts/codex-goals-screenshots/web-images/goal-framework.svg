@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0f1a"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bgGrad2)"/>
+
+  <!-- Title -->
+  <text x="800" y="65" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#ffffff">Writing a Good Goal</text>
+  <text x="800" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#888899">The 6-part framework (it's an OKR for your AI agent)</text>
+
+  <!-- Grid of 6 items: 3 cols x 2 rows -->
+
+  <!-- Row 1 -->
+  <!-- 1. Outcome -->
+  <rect x="60" y="140" width="480" height="160" rx="14" fill="#1a1a30" stroke="#ff9f43" stroke-width="2"/>
+  <rect x="60" y="140" width="480" height="6" rx="3" fill="#ff9f43"/>
+  <circle cx="100" cy="185" r="22" fill="#ff9f43" fill-opacity="0.15" stroke="#ff9f43" stroke-width="1.5"/>
+  <text x="100" y="192" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#ff9f43">1</text>
+  <text x="135" y="192" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#ff9f43">Outcome</text>
+  <text x="80" y="225" font-family="system-ui, sans-serif" font-size="15" fill="#ccccdd">What should be true when the work is done?</text>
+  <text x="80" y="252" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"P95 checkout latency below 200ms"</text>
+  <text x="80" y="280" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"All bulk emails categorized and labeled"</text>
+
+  <!-- 2. Verification -->
+  <rect x="560" y="140" width="480" height="160" rx="14" fill="#1a1a30" stroke="#4ecdc4" stroke-width="2"/>
+  <rect x="560" y="140" width="480" height="6" rx="3" fill="#4ecdc4"/>
+  <circle cx="600" cy="185" r="22" fill="#4ecdc4" fill-opacity="0.15" stroke="#4ecdc4" stroke-width="1.5"/>
+  <text x="600" y="192" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#4ecdc4">2</text>
+  <text x="635" y="192" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#4ecdc4">Verification</text>
+  <text x="580" y="225" font-family="system-ui, sans-serif" font-size="15" fill="#ccccdd">How do you test it?</text>
+  <text x="580" y="252" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"Run the checkout benchmark suite"</text>
+  <text x="580" y="280" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"Count uncategorized emails = 0"</text>
+
+  <!-- 3. Constraints -->
+  <rect x="1060" y="140" width="480" height="160" rx="14" fill="#1a1a30" stroke="#a855f7" stroke-width="2"/>
+  <rect x="1060" y="140" width="480" height="6" rx="3" fill="#a855f7"/>
+  <circle cx="1100" cy="185" r="22" fill="#a855f7" fill-opacity="0.15" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="1100" y="192" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#a855f7">3</text>
+  <text x="1135" y="192" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#a855f7">Constraints</text>
+  <text x="1080" y="225" font-family="system-ui, sans-serif" font-size="15" fill="#ccccdd">What can't break?</text>
+  <text x="1080" y="252" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"Keep the correctness suite green"</text>
+  <text x="1080" y="280" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"Don't delete important emails"</text>
+
+  <!-- Row 2 -->
+  <!-- 4. Boundaries -->
+  <rect x="60" y="330" width="480" height="160" rx="14" fill="#1a1a30" stroke="#f472b6" stroke-width="2"/>
+  <rect x="60" y="330" width="480" height="6" rx="3" fill="#f472b6"/>
+  <circle cx="100" cy="375" r="22" fill="#f472b6" fill-opacity="0.15" stroke="#f472b6" stroke-width="1.5"/>
+  <text x="100" y="382" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#f472b6">4</text>
+  <text x="135" y="382" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#f472b6">Boundaries</text>
+  <text x="80" y="415" font-family="system-ui, sans-serif" font-size="15" fill="#ccccdd">What tools and files are in scope?</text>
+  <text x="80" y="442" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"Only modify files in /src/checkout/"</text>
+  <text x="80" y="470" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"Use Gmail MCP plugin, no external APIs"</text>
+
+  <!-- 5. Iteration Policy -->
+  <rect x="560" y="330" width="480" height="160" rx="14" fill="#1a1a30" stroke="#38bdf8" stroke-width="2"/>
+  <rect x="560" y="330" width="480" height="6" rx="3" fill="#38bdf8"/>
+  <circle cx="600" cy="375" r="22" fill="#38bdf8" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="600" y="382" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#38bdf8">5</text>
+  <text x="635" y="382" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#38bdf8">Iteration Policy</text>
+  <text x="580" y="415" font-family="system-ui, sans-serif" font-size="15" fill="#ccccdd">How should the AI decide what to try next?</text>
+  <text x="580" y="442" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"Profile first, then optimize hottest path"</text>
+  <text x="580" y="470" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"Process newest emails first"</text>
+
+  <!-- 6. Stop Condition -->
+  <rect x="1060" y="330" width="480" height="160" rx="14" fill="#1a1a30" stroke="#34d399" stroke-width="2"/>
+  <rect x="1060" y="330" width="480" height="6" rx="3" fill="#34d399"/>
+  <circle cx="1100" cy="375" r="22" fill="#34d399" fill-opacity="0.15" stroke="#34d399" stroke-width="1.5"/>
+  <text x="1100" y="382" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#34d399">6</text>
+  <text x="1135" y="382" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#34d399">Stop Condition</text>
+  <text x="1080" y="415" font-family="system-ui, sans-serif" font-size="15" fill="#ccccdd">When should it give up and come back to you?</text>
+  <text x="1080" y="442" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"After 3 failed approaches, ask for help"</text>
+  <text x="1080" y="470" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">"Flag emails that need human judgment"</text>
+
+  <!-- Bottom insight box -->
+  <rect x="200" y="540" width="1200" height="120" rx="16" fill="#1a1a30" stroke="#ffffff" stroke-width="1" stroke-opacity="0.15"/>
+  <rect x="200" y="540" width="1200" height="4" rx="2" fill="#ffffff" fill-opacity="0.1"/>
+  <text x="800" y="585" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#ffffff">This is a spec, not a chat message.</text>
+  <text x="800" y="615" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888899">Writing good goals is closer to writing good tickets than writing good prompts.</text>
+  <text x="800" y="640" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888899">Product managers already know this framework — it's an OKR for an AI agent.</text>
+
+  <!-- When to use full framework vs simple -->
+  <rect x="60" y="690" width="730" height="180" rx="14" fill="#1a1a30" stroke="#ff6b6b" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="80" y="725" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#ff6b6b">Use all 6 parts when:</text>
+  <text x="80" y="755" font-family="system-ui, sans-serif" font-size="14" fill="#ccccdd">• Complex problems with many failure modes</text>
+  <text x="80" y="780" font-family="system-ui, sans-serif" font-size="14" fill="#ccccdd">• Multiple things could break</text>
+  <text x="80" y="805" font-family="system-ui, sans-serif" font-size="14" fill="#ccccdd">• Success isn't obvious to verify</text>
+  <text x="80" y="835" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">Example: "Eliminate all errors on /api/chat/v2 endpoint"</text>
+
+  <rect x="810" y="690" width="730" height="180" rx="14" fill="#1a1a30" stroke="#4ecdc4" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="830" y="725" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#4ecdc4">A sentence works when:</text>
+  <text x="830" y="755" font-family="system-ui, sans-serif" font-size="14" fill="#ccccdd">• The finish line is obvious</text>
+  <text x="830" y="780" font-family="system-ui, sans-serif" font-size="14" fill="#ccccdd">• Natural stopping point exists</text>
+  <text x="830" y="805" font-family="system-ui, sans-serif" font-size="14" fill="#ccccdd">• Hard to break anything important</text>
+  <text x="830" y="835" font-family="system-ui, sans-serif" font-size="13" fill="#888899" font-style="italic">Example: "Categorize all emails. Unsubscribe from junk."</text>
+</svg>

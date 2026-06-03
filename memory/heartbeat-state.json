@@ -1,0 +1,51 @@
+{
+  "lastChecks": {
+    "email": null,
+    "calendar": null,
+    "weather": null,
+    "agentsVault": 1780452000,
+    "monoRepoPull": 1780487164,
+    "contentEngine": 1780487164,
+    "contentDashboard": 1780222235,
+    "selfImprovement": 1780155154,
+    "sessionIndex": 1780487164
+  },
+  "agentsVaultItems": [
+    "6nes2mlkelqkssk5uwe32n6ewe",
+    "377cohmwweleby33evypftjbjy",
+    "6iprzzszo5mhfgqyedebrga6se",
+    "cvyrkggxhdxzp4rer2iwsecie4",
+    "xcsmq5zfvdnpjf6zxjroqdlciu",
+    "tgxfq5moajzkqgikhvbo7qsn2m",
+    "ayzlr67nkgh5yz3t3zczfeik2a",
+    "rei23rfuh5wnda6a72mvq5f4qy",
+    "zf5flvjuky2abf4uklu667gejy",
+    "mohzbh5wd5v2wgrbiv7di6vkhu",
+    "qhz5sub3cxfqkfuqbfsbzi5fmq",
+    "33k63x5nqp6knybig6fnzcv3te",
+    "of4ta3u5osgr26rq5tqi5upclm",
+    "ywcn4b4vxd2b5tp7wilnekduwi",
+    "j3koy6v7wkkjcmppfokvmouvvu",
+    "7iatood4csdzpnoma6pregh5cm"
+  ],
+  "gitArchaeology": {
+    "lastSubmodule": "docs",
+    "lastCommitProcessed": "56cd346",
+    "submodulesCompleted": [
+      "api",
+      "database",
+      "chat",
+      "open-agents",
+      "plugins",
+      "marketing",
+      "gtm",
+      "admin",
+      "strategy",
+      "bash",
+      "cli",
+      "blog",
+      "docs"
+    ],
+    "notes": "API: 815 commits Nov 2025-May 2026. Full architecture evolution documented in wiki/products/recoup/api-architecture-evolution.md. | DATABASE: 21 commits, 154 SQL migrations Dec 2024-May 2026. Full schema evolution in wiki/products/recoup/database-schema-evolution.md. | CHAT: 9,617 commits Sep 2024-May 2026, 994 PRs. The original Recoup product. Full evolution in wiki/products/recoup/chat-repo-evolution.md. | OPEN-AGENTS: 56 commits Apr-May 2026. Vercel Labs fork → Recoup platform. Full evolution in wiki/products/recoup/open-agents-evolution.md. Phases: Auth replacement (Privy), sandbox orchestration, DB unification, credits system. | PLUGINS: 14 commits Apr-May 2026. Marketplace registry for 4 agent plugins (catalog-deals, platform, content, research). Architecture: thin registry with GitHub source refs, no relative paths. Full evolution in wiki/products/recoup/plugins-marketplace-evolution.md. | MARKETING: 56 commits Mar-May 2026. 4 phases: GTM scaffold, brand positioning sprint (14 commits in one day), Recoup rebrand, conversion funnel build-out. Full evolution in wiki/products/recoup/marketing-site-evolution.md. | GTM: 3 commits Apr-May 2026. Revenue activation layer: user export/segmentation, email sequences (welcome/activation/re-engagement), growth dashboard, Attio CRM sync, LinkedIn outreach campaign ($100k/mo sprint). Full evolution in wiki/products/recoup/gtm-repo-evolution.md. | ADMIN: 18 commits Mar-May 2026. Internal ops dashboard: Privy auth, account tables, pulse/task run history, coding agent + content agent analytics, credits rollup + drilldown. Agent-built (sweetman.eth + Recoup Agent + Paperclip). Full evolution in wiki/products/recoup/admin-dashboard-evolution.md. | STRATEGY: 6 commits Mar-Apr 2026. Strategic brain: decisions log, PMF journal, financials, customers, roster, roadmap, mission/vision, 90-day revenue plan, fundraise prep. Full evolution in wiki/products/recoup/strategy-repo-evolution.md. | BASH: 265 commits Dec 2025-Mar 2026. TypeScript bash interpreter (just-bash) for browser. 4 phases: initial build sprint (Dec 23), feature expansion (Jan), security hardening + Recoup integration (Feb), maintenance mode (Mar). Full evolution in wiki/products/recoup/bash-repo-evolution.md. | CLI: 31 commits Feb-Mar 2026. Public npm package (@recoupable/cli). Thin REST wrapper over Recoup API. Agent-first design (--json on every command, agent clarity in descriptions). 9 command groups: whoami, artists, chats, sandboxes, orgs, songs, notifications, tasks, content. Content pipeline trigger is most complex feature. Auto-publish CI. Full evolution in wiki/products/recoup/cli-repo-evolution.md. | BLOG: 13 commits Jan-May 2026. Next.js 16 blog with dual content pipeline: Paragraph API sync (sweetman.eth architecture) + repo MDX. Design system alignment May 15. SEO batch (5 agent-authored posts) May 20. Full evolution in wiki/products/recoup/blog-repo-evolution.md. | DOCS: 298 commits Jan-Jun 2026. Mintlify-based developer docs (developers.recoupable.com). 6 phases: Mintlify migration sprint (Jan 13), sandbox/API expansion (Feb), content/admin buildout (Mar), API refactors + domain split (Apr, busiest month), sessions/credits/BYOA polish (May), agent discoverability via llms.txt (Jun). 9 domain OpenAPI specs, 33 API subdirectories, multi-timezone team (Brazil, India, Vietnam, US). Agent-authored commits (34 total). BYOA evolution visible: standard docs → agent signup → Claude Code callout → llms.txt. Full evolution in wiki/products/recoup/docs-repo-evolution.md."
+  }
+}
