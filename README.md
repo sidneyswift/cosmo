@@ -37,29 +37,29 @@ Cosmo is Sid's AI assistant, running on [OpenClaw](https://github.com/openclaw/o
 └── .gitignore
 ```
 
-## Restoring Cosmo on a new machine
+## Restoring Cosmo / starting fresh
 
-1. Clone this repo to `~/.openclaw/workspace/`
-2. Install OpenClaw: `npm i -g openclaw`
-3. Copy configs from `openclaw-config/` to their real locations:
-   - `openclaw-config/openclaw.json` → `~/.openclaw/openclaw.json`
-   - `openclaw-config/cron/jobs.json` → `~/.openclaw/cron/jobs.json`
-   - `openclaw-config/agents/` → `~/.openclaw/agents/`
-   - `openclaw-config/bin/` → `~/.openclaw/bin/`
-   - `openclaw-config/claude-skills/` → `~/.claude/skills/`
-4. Fill in secrets from 1Password (see `secrets.template`)
-5. Install gstack: `cd ~/.claude/skills/gstack && npm install`
-6. Run `openclaw gateway start`
+- **[RESTORE.md](RESTORE.md)** — full resurrection runbook (soft reset, full reformat,
+  or new machine). The authoritative procedure.
+- **[RESET.md](RESET.md)** — retire Cosmo and stand up a new agent on the same shared infra.
+- `scripts/cosmo-snapshot.sh` / `cosmo-restore.sh` — complete backup/restore (core state,
+  sessions, gbrain) to the Supabase `cosmo-backups` bucket.
 
 ## Secrets
 
 All secrets are in 1Password (Agents vault). See `secrets.template` for the complete list.
 The `openclaw.json` in this repo has `${PLACEHOLDER}` values where secrets go.
 
-## Not backed up here
+## Complete backup coverage
 
-- `~/.openclaw/agents/main/sessions/` — 200MB+ of session transcripts (ephemeral)
-- `~/.gbrain/` — GBrain database (separate backup)
-- `~/Documents/wiki/` — Research wiki (separate git repo)
-- `~/.claude/skills/gstack/node_modules/` — reinstall via npm
-- `~/Documents/projects/content-engine/` — separate git repo
+| Layer | Backup |
+|---|---|
+| Code, skills, docs, persona, memory `.md` | this repo (GitHub) |
+| Core state (identity, creds, memory.sqlite, flows, live config) | Supabase `cosmo-core/` (encrypted) |
+| Session transcripts | Supabase `cosmo-sessions/` |
+| GBrain DB | Supabase `gbrain/` |
+| Research wiki | GitHub `sidneyswift/cosmo-wiki` |
+| Content engine | GitHub `sidneyswift/content-engine` |
+| Secrets | 1Password "Agents" vault |
+
+Regenerable, not backed up: `node_modules/` (npm), `content-engine/data/media/` (generated slides).
