@@ -6,7 +6,7 @@
       "name": "nightly-value",
       "enabled": true,
       "createdAtMs": 1778128479112,
-      "updatedAtMs": 1780463129745,
+      "updatedAtMs": 1783299693472,
       "schedule": {
         "kind": "cron",
         "expr": "0 1 * * *",
@@ -21,83 +21,20 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "channel:c0ak88j4spk",
+        "channel": "slack",
+        "to": "channel:C0AK88J4SPK",
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1780549200000,
-        "lastRunAtMs": 1780462800005,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 329740,
+        "nextRunAtMs": 1780635600000,
+        "lastRunAtMs": 1780549372046,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 2656,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "1d52dc69-efe2-4fae-ba4c-e360e855d3a7",
-      "name": "content-pulse",
-      "description": "Daily content discovery at 6 AM ET",
-      "enabled": false,
-      "createdAtMs": 1778220423492,
-      "updatedAtMs": 1779513771429,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 6 * * *",
-        "tz": "America/New_York"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run the content engine pulse: node /Users/recoupable/Documents/projects/content-engine/scripts/pulse.js — then report a quick summary of what was discovered to #cosmo-wiki.",
-        "timeoutSeconds": 180
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "channel:c0ak88j4spk",
-        "bestEffort": true
-      },
-      "state": {
-        "lastRunAtMs": 1779444000005,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 93463,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "2d995ab2-44ce-410e-a991-2b5656e0e7e7",
-      "name": "content-perf-check",
-      "description": "Evening analytics feedback loop at 8 PM ET",
-      "enabled": false,
-      "createdAtMs": 1778220430551,
-      "updatedAtMs": 1779513800881,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 20 * * *",
-        "tz": "America/New_York"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run the content engine perf check: node /Users/recoupable/Documents/projects/content-engine/scripts/perf-check.js — update topic multipliers based on what performed well.",
-        "timeoutSeconds": 120
-      },
-      "delivery": {
-        "mode": "none",
-        "channel": "last"
-      },
-      "state": {
-        "lastRunAtMs": 1779494400008,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 18126,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastErrorReason": "auth",
+        "runningAtMs": 1783300052385
       }
     },
     {
@@ -106,7 +43,7 @@
       "description": "GBrain live sync - import wiki changes and embed new content",
       "enabled": true,
       "createdAtMs": 1778947235938,
-      "updatedAtMs": 1780496786474,
+      "updatedAtMs": 1780579882314,
       "schedule": {
         "kind": "every",
         "everyMs": 1800000,
@@ -124,14 +61,14 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1780498574176,
-        "lastRunAtMs": 1780496774176,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 12298,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": false
+        "nextRunAtMs": 1780583482314,
+        "lastRunAtMs": 1780579876506,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 5808,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 23,
+        "runningAtMs": 1783300052385
       }
     },
     {
@@ -140,7 +77,7 @@
       "description": "Daily morning briefing — signal-only, delivered to Sid's DM at 7:30 AM ET",
       "enabled": true,
       "createdAtMs": 1779195222683,
-      "updatedAtMs": 1780486234276,
+      "updatedAtMs": 1780573795024,
       "schedule": {
         "kind": "cron",
         "expr": "30 7 * * *",
@@ -161,14 +98,15 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1780572600000,
-        "lastRunAtMs": 1780486200004,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 34272,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1780659000000,
+        "lastRunAtMs": 1780573202975,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 592049,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastErrorReason": "timeout",
+        "runningAtMs": 1783300052385
       }
     },
     {
@@ -176,7 +114,7 @@
       "name": "janitor-sweep",
       "enabled": true,
       "createdAtMs": 1779283113307,
-      "updatedAtMs": 1780468266076,
+      "updatedAtMs": 1780555326598,
       "schedule": {
         "kind": "cron",
         "expr": "30 2 * * *",
@@ -195,14 +133,16 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1780554600000,
-        "lastRunAtMs": 1780468200004,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 66072,
+        "nextRunAtMs": 1780641000000,
+        "lastRunAtMs": 1780555324339,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 2259,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "consecutiveErrors": 1,
+        "lastDelivered": true,
+        "lastErrorReason": "auth",
+        "runningAtMs": 1783300052385
       }
     },
     {
@@ -210,7 +150,7 @@
       "name": "morning-post",
       "enabled": true,
       "createdAtMs": 1780010658036,
-      "updatedAtMs": 1780487124579,
+      "updatedAtMs": 1780574541025,
       "schedule": {
         "kind": "cron",
         "expr": "45 7 * * *",
@@ -227,78 +167,17 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1780573500000,
-        "lastRunAtMs": 1780487100005,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 24574,
+        "nextRunAtMs": 1780659900000,
+        "lastRunAtMs": 1780573797555,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 743470,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "f7a3b1c2-8d4e-4f5a-9b6c-7e8d9f0a1b2c",
-      "name": "slack-review-watch",
-      "description": "Poll #cosmo-review for reactions (👍/👎/feedback) every 5 minutes",
-      "enabled": false,
-      "createdAtMs": 1780029844283,
-      "updatedAtMs": 1780199431371,
-      "schedule": {
-        "kind": "every",
-        "everyMs": 300000,
-        "anchorMs": 1780029844283
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run 'node ~/Documents/projects/content-engine/scripts/slack-review.js watch' and report results. If nothing happened (no approvals/rejections/feedback), reply HEARTBEAT_OK.",
-        "timeoutSeconds": 300
-      },
-      "delivery": {
-        "mode": "none",
-        "channel": "last"
-      },
-      "state": {
-        "lastRunAtMs": 1780199317145,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 70904,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "7c1546ca-6ea0-4c45-927e-e54247a8bfb8",
-      "name": "slack-review-watcher",
-      "enabled": false,
-      "createdAtMs": 1780167574280,
-      "updatedAtMs": 1780199452086,
-      "schedule": {
-        "kind": "cron",
-        "expr": "*/5 * * * *",
-        "tz": "America/New_York"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run this exact command and report the output: node /Users/recoupable/Documents/projects/content-engine/scripts/slack-review.js watch"
-      },
-      "delivery": {
-        "mode": "none",
-        "channel": "last"
-      },
-      "state": {
-        "lastRunAtMs": 1780199400006,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 52080,
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastErrorReason": "timeout",
+        "lastDeliveryError": "LLM request failed: network connection error.",
+        "runningAtMs": 1783300052385
       }
     }
   ]

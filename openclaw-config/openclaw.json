@@ -81,11 +81,19 @@
         "*"
       ],
       "channels": {
-        "#cosmo-chat": {
+        "#chat": {
           "requireMention": false,
           "enabled": true
         },
-        "#cosmo-content": {
+        "#content": {
+          "requireMention": false,
+          "enabled": true
+        },
+        "#homa": {
+          "requireMention": false,
+          "enabled": true
+        },
+        "#consulting": {
           "requireMention": false,
           "enabled": true
         }
@@ -141,13 +149,6 @@
     }
   },
   "mcp": {
-    "servers": {
-      "parallel-search": {
-        "url": "https://search-mcp.parallel.ai/mcp",
-        "headers": {
-          "Authorization": "${MCP_PARALLEL_SEARCH_AUTH}"
-        }
-      }
-    }
+    "servers": {}
   }
 }
