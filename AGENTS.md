@@ -227,8 +227,15 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
    Never say "you'll need to open Claude Code for that." Just do it.
 
 2. **Resolve the repo.** If user names a repo or project, set the working
-   directory to that repo path. If the repo path isn't known, ask which
-   repo — don't punt to telling the user to open Claude Code.
+   directory to that repo path. **If the message came from a project channel,
+   the channel IS the project — resolve the repo from it and don't ask:**
+   - `#homa` (C0BF3QUABDH) → `~/projects/homa` (sidneyswift/homa)
+   - `#consulting` (C0BFC0EC9R7) → `~/projects/consulting-os` (sidneyswift/consulting-os)
+   Only if the repo is still unknown (e.g. `#chat`, a general channel with no repo
+   named), ask which repo — don't punt to telling the user to open Claude Code.
+   New project channels map `#<name>` → `~/projects/<repo>`; see each channel's
+   section in `TOOLS.md`. NOTE: match channels by these IDs, not names — Sid
+   renames channels, and name-based matching silently breaks listening.
 
 3. **Autoplan runs end-to-end.** For /autoplan specifically: spawn the session,
    let it run the full review pipeline (CEO → design → eng), and when it

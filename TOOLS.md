@@ -59,6 +59,12 @@ All secrets live in the *Agents* vault in 1Password. Pull at runtime with `op re
 | (Vercel) | `op://Agents/Vercel Cosmo Token/credential` | Vercel API token for Cosmo. Docs: https://vercel.com/docs/rest-api
 | (GitHub PAT) | `op://Agents/GitHub Personal Access Token/token` | GitHub Personal Access Token (fine-grained). Settings: https://github.com/settings/personal-access-tokens
 | (Google OAuth) | `op://Agents/Google Workspace OAuth Client` | Google Workspace OAuth client credentials (client_id, client_secret, project_id). For Gmail, Calendar, Drive, etc. Docs: https://developers.google.com/identity
+| (OpenClaw Gateway) | `op://Agents/OpenClaw Gateway Token/credential` | OpenClaw gateway auth token
+| (Vercel AI Gateway) | `op://Agents/Vercel AI Gateway Key/credential` | Vercel AI Gateway API key for model routing
+| (Cosmo Slack) | `op://Agents/Cosmo Slack Tokens` | Slack bot_token + app_token for Cosmo app
+| (Parallel Search) | `op://Agents/Parallel Search MCP Key/credential` | Parallel Search MCP server API key
+| (Cosmo Snapshot) | `op://Agents/Cosmo Snapshot Key/password` | Cosmo snapshot/backup key
+| (GitHub PAT RW) | `op://Agents/GitHub PAT sidneyswift all-repos-rw/token` | GitHub PAT for sidneyswift with all-repos read-write scope
 
 Usage pattern:
 ```bash
@@ -129,6 +135,18 @@ Sid drops links, content, or topics here → I process them into the wiki.
 - GitHub repos → `gh` CLI or `web_fetch`
 - X articles (x.com/i/article/...) → `web_fetch` the linked URL from tweet entities
 - Bare text/ideas → straight to wiki as concept or entity page
+
+### #homa Channel (C0BF3QUABDH)
+**Project channel for `homa`.** Any message here is about the homa project — assume it without asking.
+- Repo: `github.com/sidneyswift/homa` (private) → local clone at `~/projects/homa`
+- For coding tasks landing in this channel, resolve the repo to `~/projects/homa` automatically (see AGENTS.md "Resolve the repo").
+- Commits in this repo are authored as `Cosmo <cosmo@recoupable.com>`; pushes go out via the `sidneyswift` gh account.
+
+### #consulting Channel (C0BFC0EC9R7)
+**Project channel for `consulting-os`.** Any message here is about the consulting-os project — assume it without asking.
+- Repo: `github.com/sidneyswift/consulting-os` (private) → local clone at `~/projects/consulting-os`
+- For coding tasks landing in this channel, resolve the repo to `~/projects/consulting-os` automatically (see AGENTS.md "Resolve the repo").
+- Commits in this repo are authored as `Cosmo <cosmo@recoupable.com>`; pushes go out via the `sidneyswift` gh account.
 
 ### X API (xurl) + Sid's High Signal List
 - **High Signal List**: `2053546276210487592` — Sid curates this list with accounts worth monitoring for content discovery. Used by pulse.js as the highest-signal source (1.5x engagement boost).

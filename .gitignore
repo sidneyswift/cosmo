@@ -11,6 +11,12 @@ slides/
 *.tmp
 *.lock
 
+# === Runtime state (regenerated each boot) ===
+openclaw-workspace-state.json
+
+# === Sid's app repos live in ~/projects, never nested here ===
+projects/
+
 # === OS files ===
 .DS_Store
 Thumbs.db
