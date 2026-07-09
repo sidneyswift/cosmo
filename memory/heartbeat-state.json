@@ -4,7 +4,7 @@
     "calendar": null,
     "weather": null,
     "agentsVault": 1751766540,
-    "monoRepoPull": 1783423976
+    "monoRepoPull": 1783516679
   },
   "agentsVaultItems": [
     "33k63x5nqp6knybig6fnzcv3te",
@@ -34,5 +34,9 @@
     "lastSubmodule": "plugins",
     "lastCommitProcessed": "ccaf610",
     "note": "Created brain pages for all 4 plugins + marketplace overview. Jul 7."
+  },
+  "marketingResearch": {
+    "lastUpdate": "2026-07-08",
+    "note": "Updated marketing-site-evolution.md with Phase 5 (valuation PLG) and Phase 6 (domain consolidation). Reimported 13 products/recoup pages to gbrain."
   }
 }
