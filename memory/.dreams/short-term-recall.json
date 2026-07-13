@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-09T12:40:35.984Z",
+  "updatedAt": "2026-07-12T11:10:37.607Z",
   "entries": {
     "memory:memory/2026-04-11.md:1:21": {
       "key": "memory:memory/2026-04-11.md:1:21",
@@ -847,13 +847,13 @@
       "endLine": 185,
       "source": "memory",
       "snippet": "- context.example.md shows how to configure for a new environment - First skill installed in any new environment = sid-skills-system ### Environment Model - Cosmo = Hub (full publish access, main workshop) - Homa = Spoke (installs from portfolio, can build but can't publish directly) - Client = Spoke (builds for client, extracts general versions for Sid) - All connected through the portfolio repo (sidneyswift/skills) ### Family Context Learned - Wife: Alessa - Son: Story - Homa is on a separate Mac, separate OpenClaw - Sid AND Alessa are in Homa's Slack - Homa handles homeschooling workflows, Story's curriculum, biometrics/benchmarking ## Content Engine: Duplicate Topic Fix - Sid flagged",
-      "recallCount": 11,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.07471327051388,
+      "totalScore": 9.80196947258449,
       "maxScore": 0.8745582730126776,
       "firstRecalledAt": "2026-05-10T03:43:34.205Z",
-      "lastRecalledAt": "2026-07-09T12:40:35.984Z",
+      "lastRecalledAt": "2026-07-12T11:10:37.607Z",
       "queryHashes": [
         "5ce1a713515a",
         "a7f99e83c7f5",
@@ -865,7 +865,9 @@
         "0c39a637a583",
         "8d90c0166fde",
         "f51286b9c0c0",
-        "1451992c594d"
+        "1451992c594d",
+        "bfc7b58cfa61",
+        "c8857ac934d1"
       ],
       "recallDays": [
         "2026-05-09",
@@ -873,7 +875,8 @@
         "2026-05-12",
         "2026-05-15",
         "2026-05-28",
-        "2026-07-09"
+        "2026-07-09",
+        "2026-07-12"
       ],
       "conceptTags": [
         "context.example.md",
@@ -1140,20 +1143,22 @@
       "endLine": 131,
       "source": "memory",
       "snippet": "2. content-engine skill (next — package existing pipeline as skill) 3. wiki-builder skill (after — compounds research quality) ### Files Created - `skills-system-final.md` — the final proposal (supersedes v1, holes doc, v2) - `workspace/skills/.gitignore` - `workspace/skills/scripts/lint-for-publish.sh` - `workspace/skills/scripts/publish.sh` - `workspace/skills/social-slides/` (full skill with context.md) ## Major Context Expansion: Sid's Full Skill Ecosystem (15:45) ### Sid's OpenClaw Instances 1. **Cosmo** — Sid's personal system (this instance, MacBook) 2. **Homa** — Built for Sid's wife Alessa, focused on homeschooling their son Story - Separate Mac, separate OpenClaw instance, se",
-      "recallCount": 6,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.72950922872846,
+      "totalScore": 6.4586353335541915,
       "maxScore": 0.8754222392622828,
       "firstRecalledAt": "2026-05-11T03:07:35.113Z",
-      "lastRecalledAt": "2026-07-09T12:40:35.984Z",
+      "lastRecalledAt": "2026-07-12T11:10:37.607Z",
       "queryHashes": [
         "fba395cc2637",
         "237de170bc0f",
         "2b46adf4e21e",
         "bf0af0186185",
         "557cb7ae1600",
-        "1451992c594d"
+        "1451992c594d",
+        "bfc7b58cfa61",
+        "c8857ac934d1"
       ],
       "recallDays": [
         "2026-05-10",
@@ -1161,7 +1166,8 @@
         "2026-05-16",
         "2026-05-25",
         "2026-05-30",
-        "2026-07-09"
+        "2026-07-09",
+        "2026-07-12"
       ],
       "conceptTags": [
         "content-engine",
@@ -2648,26 +2654,29 @@
       "endLine": 162,
       "source": "memory",
       "snippet": "- Skills live in private GitHub repos per company ### The Real Problem (Expanded) Sid is building skills across MULTIPLE contexts: - Cosmo (personal) - Homa (family/homeschool) - Client companies (consulting) - Recoupable (product — may be out of scope) Skills built in ANY of these contexts could be useful in others. The system needs to make everything compound across all contexts. ### Three Goals for All Skill Work 1. Save Sid time 2. Grow his audience 3. Make him money ### Key Insight I Was Missing This isn't about one OpenClaw instance. It's about Sid as a SKILL BUILDER across multiple environments. The architecture needs to work at Sid's level, not at Cosmo's level. ## Skills System",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.059043863719294,
+      "totalScore": 5.784620607810399,
       "maxScore": 0.8737821601430115,
       "firstRecalledAt": "2026-05-16T11:44:21.584Z",
-      "lastRecalledAt": "2026-07-09T12:40:35.984Z",
+      "lastRecalledAt": "2026-07-12T11:10:37.607Z",
       "queryHashes": [
         "4a5f8a943699",
         "b0c8e14744e5",
         "87e53c405aad",
         "799d21fbf530",
-        "1451992c594d"
+        "1451992c594d",
+        "bfc7b58cfa61",
+        "c8857ac934d1"
       ],
       "recallDays": [
         "2026-05-16",
         "2026-05-20",
         "2026-05-21",
         "2026-05-27",
-        "2026-07-09"
+        "2026-07-09",
+        "2026-07-12"
       ],
       "conceptTags": [
         "family/homeschool",
@@ -5453,6 +5462,68 @@
         "out",
         "loud",
         "test"
+      ]
+    },
+    "memory:memory/2026-07-06.md:29:54": {
+      "key": "memory:memory/2026-07-06.md:29:54",
+      "path": "memory/2026-07-06.md",
+      "startLine": 29,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "- Likely cause: free-tier Supabase project paused for inactivity (last nightly engine run was May 29) - Impact: content engine entirely broken — `slack-review.js watch`, `getDrafts()`, all Supabase calls fail with `TypeError: fetch failed` - Content pipeline DB stats (via local SQLite fallback): 3 published, 0 in any active state, 779 ideas all reviewed - No content published in last 24h - **Action needed:** Sid needs to unpause the Supabase project from the dashboard ### Calendar - `gog` command broken — needs `--account` flag or default set via `gog auth manage` - Could not pull today's meetings ### Mono Repo - Pulled latest: 3 new plugin submodules added (recoup-content-plugin, recoup-p",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.837835085962536,
+      "maxScore": 0.837835085962536,
+      "firstRecalledAt": "2026-07-12T11:10:16.264Z",
+      "lastRecalledAt": "2026-07-12T11:10:16.264Z",
+      "queryHashes": [
+        "bfc7b58cfa61"
+      ],
+      "recallDays": [
+        "2026-07-12"
+      ],
+      "conceptTags": [
+        "free-tier",
+        "slack-review.js",
+        "recoup-content-plugin",
+        "recoup-p",
+        "likely",
+        "cause",
+        "free",
+        "tier"
+      ]
+    },
+    "memory:memory/2026-07-12.md:19:32": {
+      "key": "memory:memory/2026-07-12.md:19:32",
+      "path": "memory/2026-07-12.md",
+      "startLine": 19,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "- Built interactive AI Readiness Assessment lead magnet for consulting practice - Single HTML file at `~/projects/consulting-os/library/tools/ai-readiness-assessment.html` (30KB) - 10 questions across 5 categories (Content, Catalog, Fan Engagement, Operations, Team) - 4-tier scoring (AI Unaware → AI Native), animated results, ROI calculator, lead capture - Adapts Corey Ganim $999 assessment model for music vertical - Committed `59656de`, pushed to consulting-os/main - Category rotation: last 3 nights were marketing site → this is consulting tooling - Ready to send to pipeline prospects (Stellar, LANDR, Riot, etc.) ## Technical Notes - yt-dlp needed updating — YouTube anti-bot blocked old ve",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8267456663966909,
+      "maxScore": 0.8267456663966909,
+      "firstRecalledAt": "2026-07-12T11:10:37.607Z",
+      "lastRecalledAt": "2026-07-12T11:10:37.607Z",
+      "queryHashes": [
+        "c8857ac934d1"
+      ],
+      "recallDays": [
+        "2026-07-12"
+      ],
+      "conceptTags": [
+        "4-tier",
+        "consulting-os/main",
+        "yt-dlp",
+        "anti-bot",
+        "built",
+        "interactive",
+        "readiness",
+        "assessment"
       ]
     }
   }

@@ -141,6 +141,32 @@ Sid drops links, content, or topics here → I process them into the wiki.
 - Repo: `github.com/sidneyswift/homa` (private) → local clone at `~/projects/homa`
 - For coding tasks landing in this channel, resolve the repo to `~/projects/homa` automatically (see AGENTS.md "Resolve the repo").
 - Commits in this repo are authored as `Cosmo <cosmo@recoupable.com>`; pushes go out via the `sidneyswift` gh account.
+- Weekly digest from homa-feedback/homa-inspo posts here every Sunday 10 AM ET
+
+### #homa-feedback Channel (C0BHTC78R1B)
+**Product feedback channel for Aless and Carolyng.** No mention required — I watch all messages.
+- Bugs, worksheet critiques, feature requests, account issues
+- I act as product manager: triage, ask ONE follow-up to clarify, then fix or escalate
+- Design/layout fixes → fix autonomously, push branch, show preview in-thread
+- Content/curriculum issues → flag for Sid in weekly digest
+- All feedback logged to `~/projects/homa/.cosmo/feedback-log.md`
+- Updates taste model at `~/projects/homa/.cosmo/homa-taste.md`
+
+### #homa-inspo Channel (C0BHQDC033M)
+**Reference material drops from Aless and Carolyng.** No mention required — I watch all messages.
+- TPT worksheets, Etsy finds, curriculum examples, competitor references
+- I reply in-thread with structured breakdown: what's valuable about the reference
+- Use teach-me-explainer technique: give them vocabulary to express taste
+- All references cataloged in `~/projects/homa/.cosmo/inspo-catalog.md`
+- Patterns extracted → update taste model → eventually feed materials-studio
+
+### Homa Product Team
+- **Aless** — Sid's wife. Non-technical. Homeschool mom and primary Homa user. Co-founder.
+- **Carolyng** — Aless's friend. Non-technical. Homeschool mom and Homa user.
+- Both are the user feedback loop to PMF. Their taste and feedback is product signal.
+- Cosmo acts as PM between them and the codebase: they give feedback, I translate to code.
+- Taste model: `~/projects/homa/.cosmo/homa-taste.md` — living spec of their preferences
+- Cron: `homa-weekly-digest` — Sundays 10 AM ET, digest to #homa
 
 ### #consulting Channel (C0BFC0EC9R7)
 **Project channel for `consulting-os`.** Any message here is about the consulting-os project — assume it without asking.
