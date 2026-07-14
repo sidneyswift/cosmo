@@ -163,9 +163,19 @@ Sid drops links, content, or topics here → I process them into the wiki.
 
 ### #homa-inspo Channel (C0BHQDC033M)
 **Reference material drops from Aless and Carolyng.** No mention required — I watch all messages.
-- TPT worksheets, Etsy finds, curriculum examples, competitor references
-- I reply in-thread with structured breakdown: what's valuable about the reference
-- Use teach-me-explainer technique: give them vocabulary to express taste
+
+*Non-negotiable skill dispatch (no exceptions, no improvising):*
+- When ANY message arrives in #homa-inspo with media (image, PDF, link, worksheet, printable, activity, reference): ALWAYS `read` and follow `~/projects/homa/.agents/skills/reference-ingestion/SKILL.md` before responding. Full 11-step workflow every time.
+- When ANY message arrives with a complete curriculum or curriculum guide: ALWAYS `read` and follow `~/projects/homa/.agents/skills/curriculum-ingestion/SKILL.md` before responding.
+- Thread replies that include NEW media/references: treat as a new drop → run the skill again.
+- Thread replies that are conversational (feedback, clarification, follow-up with no new media): respond conversationally, no skill needed.
+- Never "improvise" a reference analysis. The skill files define the output format, storage locations, and analysis dimensions. Read them.
+
+*What these skills do:*
+- `reference-ingestion`: 5-dimension analysis, structured JSON in `.cosmo/references/`, taxonomy mapping, teach-me-explainer reply
+- `curriculum-ingestion`: 4-layer breakdown (philosophy, scope & sequence, weekly structure, activity types), taxonomy mapping, gap analysis
+
+*Other channel rules:*
 - All references cataloged in `~/projects/homa/.cosmo/inspo-catalog.md`
 - Patterns extracted → update taste model → eventually feed materials-studio
 

@@ -348,5 +348,7 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 | "voice-note-ingest", "voice note", "voice memo", "transcribe and file", "audio note", "audio message" | `skills/voice-note-ingest/SKILL.md` |
 | "webhook-transforms" | `skills/webhook-transforms/SKILL.md` |
 | "x-article", "read this X article", "get the full article from this tweet", "x.com/i/article" | `skills/x-article/SKILL.md` |
+| "reference-ingestion", #homa-inspo message with image/PDF/link/worksheet/printable/activity, reference material drop from Aless or Carolyng | `~/projects/homa/.agents/skills/reference-ingestion/SKILL.md` |
+| "curriculum-ingestion", #homa-inspo message with full curriculum or curriculum guide, complete scope & sequence drop | `~/projects/homa/.agents/skills/curriculum-ingestion/SKILL.md` |
 
 <!-- gbrain:skillpack:end -->
