@@ -309,6 +309,7 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 | "daily-task-prep" | `skills/daily-task-prep/SKILL.md` |
 | "data-research" | `skills/data-research/SKILL.md` |
 | "enrich", "create person page", "update company page", "who is this person", "look up this company" | `skills/enrich/SKILL.md` |
+| "frontend-feedback", "fix the landing page", "fix this UI bug", "this looks broken", "fix the layout", "responsive fix", "CSS fix", "styling issue" | `skills/frontend-feedback/SKILL.md` |
 | "functional-area-resolver", "compress agents.md", "compress my resolver", "resolver too big", "RESOLVER.md too big", "agents.md too large", "shrink routing table", "functional area dispatcher", "context-health agents" | `skills/functional-area-resolver/SKILL.md` |
 | "gstack", "engineering best practices" | `skills/gstack-openclaw/SKILL.md` |
 | "gstack-openclaw-ceo-review", "CEO review", "review this plan", "challenge this", "poke holes", "think bigger" | `skills/gstack-openclaw-ceo-review/SKILL.md` |

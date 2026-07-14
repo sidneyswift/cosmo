@@ -146,11 +146,20 @@ Sid drops links, content, or topics here → I process them into the wiki.
 ### #homa-feedback Channel (C0BHTC78R1B)
 **Product feedback channel for Aless and Carolyng.** No mention required — I watch all messages.
 - Bugs, worksheet critiques, feature requests, account issues
-- I act as product manager: triage, ask ONE follow-up to clarify, then fix or escalate
-- Design/layout fixes → fix autonomously, push branch, show preview in-thread
+- I act as product manager: triage, implement, merge, deploy, THEN reply
 - Content/curriculum issues → flag for Sid in weekly digest
 - All feedback logged to `~/projects/homa/.cosmo/feedback-log.md`
 - Updates taste model at `~/projects/homa/.cosmo/homa-taste.md`
+
+*Feedback response flow (founder ruling 2026-07-17):*
+1. Feedback lands → assess: is it clear and scoped, or vague/large?
+2. If *vague or large*: ask ONE clarifying question in-thread before implementing. Examples: "do you mean X or Y?", "which page is this on?", "what should it look like instead?"
+3. If *clear and scoped*: implement silently. No "I'm on it" reply.
+4. Push branch → open PR → wait for CI green → merge to main → Vercel deploys to prod.
+5. *Only reply in-thread once the fix is live on prod.* Aless and Carolyng are non-technical — they don't know what a PR URL is. They expect the real app to reflect their feedback.
+6. Reply should confirm what changed, in plain language. No branch names, no PR links, no technical jargon.
+
+*Why:* The users on this channel will check the live app after getting a reply. If the fix isn't deployed yet, they'll think it didn't work. So: deploy first, reply second.
 
 ### #homa-inspo Channel (C0BHQDC033M)
 **Reference material drops from Aless and Carolyng.** No mention required — I watch all messages.
