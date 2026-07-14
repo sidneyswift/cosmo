@@ -175,6 +175,11 @@ Sid drops links, content, or topics here → I process them into the wiki.
 - `reference-ingestion`: 5-dimension analysis, structured JSON in `.cosmo/references/`, taxonomy mapping, teach-me-explainer reply
 - `curriculum-ingestion`: 4-layer breakdown (philosophy, scope & sequence, weekly structure, activity types), taxonomy mapping, gap analysis
 
+*Verified ingestion marker:*
+- After completing the full skill workflow and confirming the ref JSON was written with all 5 dimensions, react to the original drop message with 🚢 (`:ship:`) emoji.
+- 🚢 = "this drop was fully processed through the correct ingestion skill." No 🚢 = it wasn't.
+- Only react AFTER verifying: ref JSON exists with all 5 dimensions, index.json updated, taste model updated, teach-me-explainer reply sent.
+
 *Other channel rules:*
 - All references cataloged in `~/projects/homa/.cosmo/inspo-catalog.md`
 - Patterns extracted → update taste model → eventually feed materials-studio
