@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T12:45:48.883Z",
+  "updatedAt": "2026-07-14T23:56:38.578Z",
   "entries": {
     "memory:memory/2026-04-11.md:1:21": {
       "key": "memory:memory/2026-04-11.md:1:21",
@@ -2900,19 +2900,21 @@
       "endLine": 171,
       "source": "memory",
       "snippet": "- Set up dream cycle (nightly brain maintenance) - Wire Granola meeting ingestion - Research customer companies with web search for texture - Explore marketing repo content/ and transcripts/ for positioning intelligence - Read key PR descriptions for architectural context - Email access still blocked on Google OAuth credentials setup ### GBrain skills installed: brain-ops, ingest, enrich, query, signal-detector, meeting-ingestion, media-ingest, concept-synthesis, article-enrichment, book-mirror, strategic-reading, perplexity-research, voice-note-ingest, archive-crawler, academic-verify, brain-pdf, and more (42 total)",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.584830936002287,
-      "maxScore": 0.795679779802903,
+      "totalScore": 2.471451364401358,
+      "maxScore": 0.8866204283990711,
       "firstRecalledAt": "2026-05-17T23:28:19.681Z",
-      "lastRecalledAt": "2026-05-17T23:28:36.713Z",
+      "lastRecalledAt": "2026-07-14T16:59:15.879Z",
       "queryHashes": [
         "adee5e2c022a",
-        "d2c445b7bf32"
+        "d2c445b7bf32",
+        "446fc709dca9"
       ],
       "recallDays": [
-        "2026-05-17"
+        "2026-05-17",
+        "2026-07-14"
       ],
       "conceptTags": [
         "brain-ops",
@@ -5539,18 +5541,21 @@
       "endLine": 135,
       "source": "memory",
       "snippet": "### What we built - Created 3 Slack channels: #homa-feedback (C0BHTC78R1B), #homa-inspo (C0BHQDC033M), #homa-social (not created yet) - Both feedback and inspo channels set to requireMention: false — I watch all messages passively - Posted and pinned guide messages in both channels - Created `.cosmo/` directory in homa repo with: - `homa-taste.md` — living taste model for what Aless and Carolyng prefer - `inspo-catalog.md` — structured log of reference materials they drop - `feedback-log.md` — bug/feedback triage log - Created `homa-weekly-digest` cron job (Sundays 10 AM ET) → posts digest to #homa - Updated TOOLS.md with all channel details and team info ### Key decisions - Cosmo act",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8608724859029693,
+      "totalScore": 2.5657024136979634,
       "maxScore": 0.8608724859029693,
       "firstRecalledAt": "2026-07-13T12:45:48.883Z",
-      "lastRecalledAt": "2026-07-13T12:45:48.883Z",
+      "lastRecalledAt": "2026-07-14T23:56:38.578Z",
       "queryHashes": [
-        "4d9f208edea5"
+        "4d9f208edea5",
+        "446fc709dca9",
+        "d6ab0db15a01"
       ],
       "recallDays": [
-        "2026-07-13"
+        "2026-07-13",
+        "2026-07-14"
       ],
       "conceptTags": [
         "homa-feedback",
@@ -5570,18 +5575,21 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "- 1Password service account returns 401 on \"Cosmo Supabase Project\" item - No `~/.openclaw/.env` fallback file exists - **Action needed:** Either grant 1P service account access or create `.env` with SUPABASE_SERVICE_ROLE_KEY - This likely breaks ALL content-engine scripts that need Supabase ## Homa Feedback Loop System (evening) ### What happened Sid wants to onboard Aless (wife) and Carolyng (friend, both non-technical homeschool moms) into the development loop for Homa. They were using a WhatsApp group chat with no structure — bugs, social content, worksheets, voice memos all mixed together. ### What we built - Created 3 Slack channels: #homa-feedback (C0BHTC78R1B), #homa-inspo (C0BHQD",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8602957679935053,
+      "totalScore": 2.56126008227429,
       "maxScore": 0.8602957679935053,
       "firstRecalledAt": "2026-07-13T12:45:48.883Z",
-      "lastRecalledAt": "2026-07-13T12:45:48.883Z",
+      "lastRecalledAt": "2026-07-14T23:56:38.578Z",
       "queryHashes": [
-        "4d9f208edea5"
+        "4d9f208edea5",
+        "446fc709dca9",
+        "d6ab0db15a01"
       ],
       "recallDays": [
-        "2026-07-13"
+        "2026-07-13",
+        "2026-07-14"
       ],
       "conceptTags": [
         "supabase-service-role-key",
@@ -5601,18 +5609,20 @@
       "endLine": 159,
       "source": "memory",
       "snippet": "- Stores analysis JSON in `.cosmo/curriculums/` - Also created `.cosmo/references/.gitkeep` and `.cosmo/curriculums/.gitkeep` ### First ingestion test — PEMDAS foldable (~10:50 PM) - Someone dropped a PEMDAS foldable PDF in #homa-inspo - Cosmo handled it but did NOT follow the new reference-ingestion skill — improvised with old markdown approach - **Problems identified:** 1. No structured JSON in `.cosmo/references/` (used old markdown catalog instead) 2. No taxonomy mapping (didn't check if order-of-operations exists in `packages/taxonomy/`) 3. No materials-studio cross-reference (didn't flag foldable format as a gap) 4. No teach-me-explainer reply (described the worksheet instea",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8597736027266552,
+      "totalScore": 1.7195472054533103,
       "maxScore": 0.8597736027266552,
       "firstRecalledAt": "2026-07-13T12:45:48.883Z",
-      "lastRecalledAt": "2026-07-13T12:45:48.883Z",
+      "lastRecalledAt": "2026-07-14T16:59:15.879Z",
       "queryHashes": [
-        "4d9f208edea5"
+        "4d9f208edea5",
+        "446fc709dca9"
       ],
       "recallDays": [
-        "2026-07-13"
+        "2026-07-13",
+        "2026-07-14"
       ],
       "conceptTags": [
         "cosmo/curriculums",
@@ -5632,18 +5642,21 @@
       "endLine": 150,
       "source": "memory",
       "snippet": "- The bottleneck removal isn't automation — it's giving Cosmo judgment authority on design and letting them validate directly ### People - **Aless** — Sid's wife, non-technical homeschool mom, Homa co-founder and primary user - **Carolyng** — Aless's friend, non-technical homeschool mom, Homa user ### Two new homa skills built (subagent, ~10:06 PM) - **reference-ingestion** (`~/projects/homa/.agents/skills/reference-ingestion/SKILL.md`) - 5-dimension analysis: layout, skill targeting (mapped to taxonomy), difficulty calibration, theming, print format - Stores structured JSON in `.cosmo/references/` with searchable manifest - Cross-references materials-studio recipes, flags gaps (e.g.",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8459809016434456,
-      "maxScore": 0.8459809016434456,
+      "totalScore": 2.53567416290993,
+      "maxScore": 0.852669371190009,
       "firstRecalledAt": "2026-07-13T12:45:48.883Z",
-      "lastRecalledAt": "2026-07-13T12:45:48.883Z",
+      "lastRecalledAt": "2026-07-14T23:56:38.578Z",
       "queryHashes": [
-        "4d9f208edea5"
+        "4d9f208edea5",
+        "446fc709dca9",
+        "d6ab0db15a01"
       ],
       "recallDays": [
-        "2026-07-13"
+        "2026-07-13",
+        "2026-07-14"
       ],
       "conceptTags": [
         "non-technical",
@@ -5663,18 +5676,20 @@
       "endLine": 115,
       "source": "memory",
       "snippet": "- Adapts Corey Ganim $999 assessment model for music vertical - Committed `59656de`, pushed to consulting-os/main - Category rotation: last 3 nights were marketing site → this is consulting tooling - Ready to send to pipeline prospects (Stellar, LANDR, Riot, etc.) ## Technical Notes - yt-dlp needed updating — YouTube anti-bot blocked old version initially - Whisper turbo model too slow on CPU for 61-min audio; switched to base model which completed in ~8 min - Video was also available as YouTube embed (dhbcVxYhWaQ) behind the X tweet link ## 🔴 Morning Content Post Failed (7:45 AM) - `slack-review.js post-best` failed: no Supabase credentials available - 1Password service account returns 4",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8411150939212487,
+      "totalScore": 1.6730317826590166,
       "maxScore": 0.8411150939212487,
       "firstRecalledAt": "2026-07-13T12:45:48.883Z",
-      "lastRecalledAt": "2026-07-13T12:45:48.883Z",
+      "lastRecalledAt": "2026-07-14T23:56:38.578Z",
       "queryHashes": [
-        "4d9f208edea5"
+        "4d9f208edea5",
+        "d6ab0db15a01"
       ],
       "recallDays": [
-        "2026-07-13"
+        "2026-07-13",
+        "2026-07-14"
       ],
       "conceptTags": [
         "consulting-os/main",
@@ -5685,6 +5700,37 @@
         "post-best",
         "adapts",
         "corey"
+      ]
+    },
+    "memory:memory/2026-07-17.md:1:10": {
+      "key": "memory:memory/2026-07-17.md:1:10",
+      "path": "memory/2026-07-17.md",
+      "startLine": 1,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "# 2026-07-17 ## Channel Rules - **#chat** (C0AK88J4SPK): Sid asked me to turn OFF auto-respond. Only reply when directly @mentioned. Do NOT respond to general chatter. ## Homa - Sid confirmed +homatest sandbox families are already fenced from physical mail (thank-you cards). Verified: `isSandboxSignupEmail()` → `sandbox=true` → `and not f.sandbox` in thank-you card sweep. No code change needed. - Explained the inspo funnel to Sid: #homa-inspo drop → breakdown in-thread → inspo-catalog.md → homa-taste.md → materials-studio SKILL.md → reference images → agent uses recipes. Gap identified: taste model → SKILL.md promotion is manual/latent. - **Founder ruling: #homa-feedback deploy-first-reply",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8238206192516169,
+      "maxScore": 0.8238206192516169,
+      "firstRecalledAt": "2026-07-14T23:56:38.578Z",
+      "lastRecalledAt": "2026-07-14T23:56:38.578Z",
+      "queryHashes": [
+        "d6ab0db15a01"
+      ],
+      "recallDays": [
+        "2026-07-14"
+      ],
+      "conceptTags": [
+        "auto-respond",
+        "thank-you",
+        "f.sandbox",
+        "homa-inspo",
+        "in-thread",
+        "inspo-catalog.md",
+        "homa-taste.md",
+        "materials-studio"
       ]
     }
   }
