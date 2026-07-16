@@ -29,6 +29,38 @@
 - **Born:** 2026-04-11
 - **Vibe:** Sharp, resourceful, dry. Opinions welcome.
 
+## Homa (Sid's Family Project)
+- **What:** AI-powered homeschool assistant for families. Built by Sid for Aless (wife) + Carolyng (friend) — both non-technical homeschool moms.
+- **Repo:** `~/projects/homa` (github.com/sidneyswift/homa)
+- **Channels:** #homa (C0BF3QUABDH, project), #homa-feedback (C0BHTC78R1B, bugs/requests), #homa-inspo (C0BHQDC033M, reference material drops)
+- **Cosmo's role:** Product manager between non-technical users and codebase. Deploy first, reply second.
+- **Team:** Aless (primary user, co-founder), Carolyng (user, architectural thinker — notices structural patterns, not just aesthetics)
+- **Product architecture (3-layer system):**
+  - Layer 1: `curriculum-studio` — what to teach (scope & sequence)
+  - Layer 2: `lesson-planner` — orchestration (weekly planners, daily guides, center cards) — NEW Jul 2026
+  - Layer 3: `materials-studio` — individual printables/worksheets
+- **Inspo flywheel (Jul 2026):** Every inspo drop makes the ENTIRE product smarter — not just worksheets. Sid's directive: "Boil the ocean. Complete the flywheel." Seven-step pipeline: analyze → graduate to materials-studio → activity format registry → taxonomy enrichment → teaching approach rules → knowledge bank → curriculum writer integration. All approval gates removed.
+- **Reference ingestion system:** `.cosmo/references/` (180+ JSONs with 5-dimension analysis), `.cosmo/curriculums/` (11+), `activity-formats.md`, `taxonomy/topics.json`. Skills: `reference-ingestion` and `curriculum-ingestion` in `~/projects/homa/.agents/skills/`.
+- **Taste model:** `~/projects/homa/.cosmo/homa-taste.md` — living spec of Aless & Carolyng's preferences
+- **Design language:** Fredoka + Plus Jakarta Sans, warm earthy palette (#c4704b terracotta, #d4a843 amber, #7a9e7e sage, #7a9eb8 blue, #c4868e rose)
+- **Handwrytten cards:** Thank-you cards via Handwrytten API. Fixed Jul 2026: return address now uses saved "Homa" address (returnAddressId) instead of Sid's personal info.
+- **Frontend-feedback skill (Jul 2026):** Sid's directive after mobile CSS miss: "ALWAYS UPDATE DESKTOP AND MOBILE. ALWAYS CHECK HOW YOUR WORK LOOKS AND REASON/ITERATE BEFORE MERGING."
+
+## Consulting Practice (consulting-os)
+- **Repo:** `~/projects/consulting-os` (github.com/sidneyswift/consulting-os)
+- **Channel:** #consulting (C0BFC0EC9R7)
+- **Active client: Seeker Music** — expanding from 1 dept (Finance/Darren) to 3 (+ Legal/Dan Stuart + Creative/Bo Bowditch). Board tracker built Jul 2026 as evidence for $5K→$10K expansion.
+- **Stakeholders:** Evan (primary contact), Darren (Finance), Dan Stuart (General Counsel, Legal OS), Bo/John Bowditch (VP Marketing & Innovation, Creative OS), Nicole (ops, key master for API keys)
+- **Tools built:** AI Readiness Assessment lead magnet, Creative Campaign Tracker, progress reports (auto-generated from transcripts + activity logs), Corey Ganim playbook ($999 SMB AI assessment model adapted for music vertical)
+- **Standard Innovation:** Competitor — Evan's "Heartbeats Proposed Development Plan" vs Sid's counter-pitch + Loom + live dashboard
+
+## Key Operational Lessons (Jun-Jul 2026)
+- **#homa-feedback: deploy first, reply second.** Non-technical users check the live app after getting a reply. Fix must be live before replying. (Founder ruling Jul 17)
+- **#homa-inspo: always use the skill.** reference-ingestion and curriculum-ingestion skills MUST fire on every drop. Fixed Jul 18 by adding to AGENTS.md skillpack table + non-negotiable dispatch rules in TOOLS.md.
+- **Mobile CSS: always check all viewports.** Desktop-only fixes get caught immediately. Lesson from hero doodle overlap fix Jul 17.
+- **#chat channel: auto-respond OFF.** Only reply when @mentioned. (Sid directive Jul 17)
+- **Content engine SQLite fallback:** Built Jul 13 after Supabase credentials went 401. Pipeline now works offline. Still need Sid to fix 1P service account access.
+
 ## Sid's Brain (GBrain)
 - **What:** Personal knowledge brain covering Sid's entire world — products, people, decisions, research, strategies
 - **Location:** Markdown at `~/Documents/wiki/`, database at `~/.gbrain/brain.pglite`
@@ -93,6 +125,7 @@
 - **Sweets** — Sid's engineer. Owns backend (api, database, tasks submodules). SRP/DRY, code approval required.
 - Non-backend submodules (skills, marketplace, marketing, GTM, strategy) can ship without Sweets' approval. Still open PRs.
 - **docs submodule = source of truth** — docs-driven development.
+- Sid recently renamed channels (Jul 2026) — match channels by ID, not name, to avoid silent routing breaks.
 
 ### Product Strategy (as of May 2026)
 - Moving from chat app → BYOA (Bring Your Own Agent). Users bring Claude Cowork / Codex / Cursor / etc.
