@@ -14,6 +14,12 @@ slides/
 # === Runtime state (regenerated each boot) ===
 openclaw-workspace-state.json
 
+# === Gateway media staging (inbound Slack/upload files, transient) ===
+media/
+
+# === Stray auto-generated agent workspace (own .git, no commits — not repo content) ===
+claude/
+
 # === Sid's app repos live in ~/projects, never nested here ===
 projects/
 
