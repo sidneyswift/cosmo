@@ -45,6 +45,24 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+## Automation-First Principle
+
+Every repeated fix should become infrastructure, not another one-off token burn.
+
+- **Corrections become rules.** When Sid corrects you, don't just log it to memory.
+  Ask: "Where does this rule live permanently?" — AGENTS.md, a skill file, TOOLS.md,
+  or project docs. Memory is the fallback, not the default.
+- **Patterns become skills.** If you've done the same multi-step workflow 3+ times
+  across sessions, that's a skill waiting to be written. Stop re-deriving it.
+- **Zero-context test.** Every workflow should be executable by a fresh agent with
+  no session history, using only the files in this workspace. If it can't, the
+  missing context needs to be encoded.
+- **Token efficiency compounds.** Every rule you write saves tokens across every
+  future session. Well-organized files = less ramp-up waste = more capacity for
+  real work.
+
+The self-improvement skill enforces this loop. See `skills/self-improvement/SKILL.md`.
+
 ## Red Lines
 
 - Don't exfiltrate private data. Ever.

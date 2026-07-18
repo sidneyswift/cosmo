@@ -54,6 +54,12 @@
 - **Tools built:** AI Readiness Assessment lead magnet, Creative Campaign Tracker, progress reports (auto-generated from transcripts + activity logs), Corey Ganim playbook ($999 SMB AI assessment model adapted for music vertical)
 - **Standard Innovation:** Competitor — Evan's "Heartbeats Proposed Development Plan" vs Sid's counter-pitch + Loom + live dashboard
 
+## Automation-First Principle (Jul 21, 2026)
+- Sid approved a fundamental operating change: corrections become durable rules (AGENTS.md/skills/docs), not just memory entries. Patterns become skills after 3+ occurrences. Weekly zero-context audits ensure fresh agents can execute any workflow from files alone.
+- Source: essay on how the best engineers automate domain knowledge as infrastructure — lint rules, CI steps, CLAUDE.md rules, skills, docs. "Every repeated fix should become infrastructure, not another one-off token burn."
+- Self-improvement skill updated with 3 new phases: Correction→Rule pipeline, Pattern→Skill detection, Zero-context audit.
+- AGENTS.md updated with the principle as a top-level section.
+
 ## Key Operational Lessons (Jun-Jul 2026)
 - **#homa-feedback: deploy first, reply second.** Non-technical users check the live app after getting a reply. Fix must be live before replying. (Founder ruling Jul 17)
 - **#homa-inspo: always use the skill.** reference-ingestion and curriculum-ingestion skills MUST fire on every drop. Fixed Jul 18 by adding to AGENTS.md skillpack table + non-negotiable dispatch rules in TOOLS.md.
