@@ -54,6 +54,7 @@ Every heartbeat, pick ONE of these and make progress. Rotate through them. Track
 - Nightly engine (1 AM) still runs for batch generation but no longer auto-schedules — just posts best draft to Slack
 - Script: `~/Documents/projects/content-engine/scripts/slack-review.js`
 - Commands: `post-best` (seed), `watch` (event loop), `replenish` (manual generate+post)
+- ⛔ *DO NOT DM Sid about content engine status.* Process silently. (Sid directive 2026-07-22)
 
 ## Growth Hacker (Weekly)
 - Read `GROWTH-HACKER.md` for current experiments and strategy
