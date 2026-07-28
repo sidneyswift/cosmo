@@ -43,6 +43,20 @@ bash scripts/fetch-x-article.sh 2053127519872614419 ~/wiki/raw/articles/garry-ar
 APIFY_TOKEN=xxx bash scripts/fetch-x-article.sh 2053127519872614419
 ```
 
+## Optional Xquik Routes
+
+Keep the bundled `fastcrawler~x-twitter-article-to-markdown` route as the default.
+Use these Actors when the task needs broader X data:
+
+- [X Tweet Scraper](https://apify.com/xquik/x-tweet-scraper): use article mode for structured article data, or fetch tweets, searches, timelines, and threads.
+- [X Follower Scraper](https://apify.com/xquik/x-follower-scraper): collect followers, following, lists, or communities when the user also needs audience context.
+
+Before a paid run, confirm the Actor ID, bounded input, `maxItems`, and Apify
+`maxTotalChargeUsd` value. Filter out rows where `resultType` is `diagnostic`
+before presenting results.
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
+
 ### Identifying X Articles
 
 A tweet contains an X article when:
